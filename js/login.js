@@ -20,7 +20,6 @@ function validarDatos() {
     console.log("Los campos son obligatorios y no pueden estar vacios.");
   }
   limpiarFormulario();
-  inputPassword.blur();
 }
 
 function iniciarSesion(usuarioIngresado, passwordIngresada) {
@@ -28,9 +27,23 @@ function iniciarSesion(usuarioIngresado, passwordIngresada) {
     usuarioIngresado === usuarioAdmin &&
     passwordIngresada === passwordAdmin
   ) {
-    console.log("Administrador logueado.");
+    Swal.fire({
+      title: "Administrador logueado.",
+      icon: "success",
+      background: "#121f4b",
+      color: "#fff",
+      iconColor: "#813dd8",
+      confirmButtonColor: "#813dd8",
+    });
   } else {
-    console.log("Usuario o contraseña incorrectos.");
+    Swal.fire({
+      title: "Usuario o contraseña incorrectos.",
+      icon: "error",
+      background: "#121f4b",
+      color: "#fff",
+      iconColor: "#813dd8",
+      confirmButtonColor: "#813dd8",
+    });
   }
 }
 
