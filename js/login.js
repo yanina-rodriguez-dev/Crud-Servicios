@@ -22,27 +22,19 @@ function validarDatos() {
     usuarioIngresado !== "" &&
     contraseñaIngresada !== ""
   ) {
-    if (
-      usuarioIngresado === usuarioAdmin &&
-      contraseñaIngresada === contraseñaAdmin
-    ) {
-      console.log("Administrador logueado.");
-    } else {
+    iniciarSesion();
+  } else {
+    console.log("Los datos ingresados no son válidos.");
+  }
+}
+
+function iniciarSesion() {
       if (
-        usuarioIngresado !== usuarioAdmin &&
+        usuarioIngresado === usuarioAdmin &&
         contraseñaIngresada === contraseñaAdmin
       ) {
-        console.log("El usuario ingresado es incorrecto.");
-      } else if (
-        usuarioIngresado === usuarioAdmin &&
-        contraseñaIngresada !== contraseñaAdmin
-      ) {
-        console.log("La contraseña ingresada es incorrecta.");
+        console.log("Administrador logueado.");
       } else {
-      console.log("Usuario invalido.");
+        console.log("Usuario o contraseña incorrectos.");
       }
-    }
-  } else {
-    console.log("Los datos ingresados son erroneos");
-  }
 }
