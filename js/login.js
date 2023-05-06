@@ -17,7 +17,14 @@ function validarDatos() {
     iniciarSesion(usuarioIngresado, passwordIngresada);
   }
   if (usuarioIngresado === "" || passwordIngresada === "") {
-    console.log("Los campos son obligatorios y no pueden estar vacios.");
+    Swal.fire({
+      title: "Los campos son obligatorios y no pueden estar vacios.",
+      icon: "error",
+      background: "#121f4b",
+      color: "#fff",
+      iconColor: "#813dd8",
+      confirmButtonColor: "#813dd8",
+    });
   }
   limpiarFormulario();
 }
