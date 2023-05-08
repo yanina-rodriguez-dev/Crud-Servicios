@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 body {
     min-height: 100vh;
     display: flex;
@@ -6,9 +8,4 @@ body {
 
 main {
     flex-grow: 1;
-}
-
-.my-class {
-    display: inline-block;
-    max-width: 10rem;
 }

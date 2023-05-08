@@ -1,0 +1,15 @@
+.btn{
+    background-color: #A02EF8;
+    border-color: #AE47EE;
+}
+
+#card-prestador{
+    background: rgb(174,71,238);
+    background: linear-gradient(45deg, rgba(174,71,238,1) 0%, rgba(160,46,248,1) 100%);
+    border-color: #AE47EE;
+}
+
+#card-prestador aside:first-child i{
+    font-size: 6em;
+}
+
