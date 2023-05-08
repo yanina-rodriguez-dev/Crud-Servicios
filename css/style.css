@@ -5,6 +5,10 @@
     margin: 0px;
     padding: 0px;
 }
+header{
+    color: aliceblue;
+    background: rgb(57, 57, 247);
+}
 /* :root{
     --padding-container: 100px;
     --color-title: #001a49;
@@ -61,7 +65,3 @@ nav{
 .navMenu{
 
 } */
-header{
-    color: aliceblue;
-    background: rgb(57, 57, 247);
-}
