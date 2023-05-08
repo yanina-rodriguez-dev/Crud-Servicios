@@ -1,7 +1,7 @@
-.btn{
+/* .btn{
     background-color: #A02EF8;
     border-color: #AE47EE;
-}
+} */
 
 #card-prestador{
     background: rgb(174,71,238);
@@ -9,7 +9,23 @@
     border-color: #AE47EE;
 }
 
-#card-prestador aside:first-child i{
-    font-size: 6em;
+#card-prestador img{
+    max-height: 11em;
+}
+
+#card-prestador aside:nth-child(2) p:first-child{
+    font-size: 1.5em;
+}
+
+.card-text{
+    max-width: 200px;
+}
+
+.carousel-inner{
+    max-width: 900px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: drop-shadow(0px 0px 3px #000);
 }
 
