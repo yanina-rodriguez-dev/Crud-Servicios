@@ -28,3 +28,10 @@
 .carousel-control-prev-icon, .carousel-control-next-icon{
     filter: drop-shadow(0px 0px 3px #000);
 }
+
+/* styles for '...' */
+.text-truncate{
+    line-height: 1.2em;
+    max-height: 2.4em;
+    white-space: normal;
+}
