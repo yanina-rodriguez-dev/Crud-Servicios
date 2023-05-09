@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     min-height: 100vh;
     display: flex;
@@ -12,7 +12,8 @@ main {
 .my-class {
     display: inline-block;
     max-width: 10rem;
-=======
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 /* PAGINA PRINCIPAL  */
 
@@ -38,5 +39,5 @@ footer ul{
 
 .btnEstilo{
     background-color: blueviolet;
->>>>>>> ddbae2b4504528f8deaf52139c76e7578be63a33
+
 }
