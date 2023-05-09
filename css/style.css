@@ -6,6 +6,26 @@ body {
     flex-direction: column;
 }
 
+header{
+    color: aliceblue;
+    background: rgb(57, 57, 247);
+}
+/* FOOTER */
+footer{
+    background:rgb(9, 9, 137);
+    padding: 50px 0;
+}
+footer h4{
+margin: top 0 ;
+}
+footer ul{
+    list-style: none;
+}
+
 main {
     flex-grow: 1;
+}
+
+.btnEstilo{
+    background-color: blueviolet;
 }
