@@ -4,6 +4,8 @@ const usuarioAdmin = "administrador",
   inputPassword = document.getElementById("inputPassword"),
   btnIniciarSesion = document.getElementById("btnIniciarSesion"),
   formLogin = document.getElementById("formLogin");
+ let sesionIniciada = false;
+ let datosEnLocalStorage = localStorage.getItem("sesionIniciada") || [];
 
 formLogin.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -42,6 +44,8 @@ function iniciarSesion(usuarioIngresado, passwordIngresada) {
       iconColor: "#813dd8",
       confirmButtonColor: "#813dd8",
     });
+    sesionIniciada = true;
+    localStorage.setItem("sesionIniciada", sesionIniciada)
   } else {
     Swal.fire({
       title: "Usuario o contraseña incorrectos.",
@@ -57,3 +61,5 @@ function iniciarSesion(usuarioIngresado, passwordIngresada) {
 function limpiarFormulario() {
   formLogin.reset();
 }
+
+
