@@ -127,3 +127,18 @@ function dibujarPuntuacion(puntaje){
     console.log(puntajeHTML)
     return puntajeHTML;
 }
+
+/* setInterval(cambiarFondo, 3000);
+
+function cambiarFondo(){
+    imgDisplay.style.backgroundImage = `url('../img/maldives-0${Math.floor(Math.random() * 3)+1}.jpg')`;
+} */
+
+const imgDisplay = document.getElementById('img-display');
+const images = ['../img/maldives-01.jpg', '../img/maldives-02.jpg', '../img/maldives-03.jpg'];
+let currentImageIndex = 0;
+
+setInterval(() => {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    imgDisplay.style.backgroundImage = `url(${images[currentImageIndex]})`;
+    }, 5000);
