@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 main {
@@ -42,5 +43,10 @@ footer ul{
 
 }
 main{
-    background-color: rgb(208, 194, 221);
+    background-image: url(../img/fondoplaya.jpg);
+}
+.card{
+    background: #00000092;
+    color: white;
+   
 }
