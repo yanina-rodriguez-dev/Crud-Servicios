@@ -19,42 +19,50 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg  fixed-top" id="navbar" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand text-light" href="#">Travel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link active" aria-current="page" href="../index.html"
+                >Inicio</a
+              >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="../pages/login.html">Acceder</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Nosotros</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Contactos</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Administrador</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Search
+            </button>
           </form>
         </div>
       </div>
@@ -171,7 +179,7 @@
                   <div class="col-5 col-md-3 col-lg-2 pe-0">
                     <img src="https://picsum.photos/200?random=1" class="img-fluid rounded-start" alt="...">
                   </div>
-                  <div class="col-7 col-md-9 col-lg-10 px-0">
+                  <div class="col-7 col-md-9 col-lg-10">
                     <div class="card-body px-0">
                       <h5 class="card-title">Nombre Reviewer</h5>
                       <p class="mb-0">
@@ -182,8 +190,7 @@
                         <i class="bi bi-star-fill text-dark opacity-25"></i>
                       </p>
                       <p class="card-text d-inline-block text-truncate mb-0">This is a wider card with supporting text
-                        below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
+                        below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                     </div>
                   </div>
@@ -276,35 +283,71 @@
               <textarea class="form-control" placeholder="Leave a comment here" id="textAreaReview"></textarea>
               <label for="textAreaReview">Comments</label>
             </div>
-            <div class="mb-3 btn-group" role="group" aria-label="Basic example">
-              <input type="radio" class="btn-check" name="options-review" id="estrella-1" autocomplete="off">
-              <label class="btn btn-outline-warning text-light" for="estrella-1"><i class="bi bi-star-fill"></i></label>
-
-              <input type="radio" class="btn-check" name="options-review" id="estrella-2" autocomplete="off">
-              <label class="btn btn-outline-warning text-light" for="estrella-2"><i class="bi bi-star-fill"></i></label>
-
-              <input type="radio" class="btn-check" name="options-review" id="estrella-3" autocomplete="off">
-              <label class="btn btn-outline-warning text-light" for="estrella-3"><i class="bi bi-star-fill"></i></label>
-
-              <input type="radio" class="btn-check" name="options-review" id="estrella-4" autocomplete="off">
-              <label class="btn btn-outline-warning text-light" for="estrella-4"><i class="bi bi-star-fill"></i></label>
-
-              <input type="radio" class="btn-check" name="options-review" id="estrella-5" autocomplete="off">
-              <label class="btn btn-outline-warning text-light" for="estrella-5"><i class="bi bi-star-fill"></i></label>
-
+            <div class="mb-3 rate">
+              <input type="radio" id="estrella-5" name="rate" value="5" />
+              <label for="estrella-5" title="5 estrellas">5 estrellas</label>
+              <input type="radio" id="estrella-4" name="rate" value="4" />
+              <label for="estrella-4" title="4 estrellas">4 estrellas</label>
+              <input type="radio" id="estrella-3" name="rate" value="3" />
+              <label for="estrella-3" title="3 estrellas">3 estrellas</label>
+              <input type="radio" id="estrella-2" name="rate" value="2" />
+              <label for="estrella-2" title="2 estrellas">2 estrellas</label>
+              <input type="radio" id="estrella-1" name="rate" value="1" />
+              <label for="estrella-1" title="1 estrellas">1 estrella</label>
             </div>
-            <button class="btn-primary btn mt-3" type="submit">
-              Dejar mi Review
-            </button>
+            <div class="mb-3 row">
+              <button class="btn-primary btn" type="submit">
+                Dejar mi Review
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-
-
-  <footer data-bs-theme="dark" class="bg-dark text-light text-center p-3">
-    <p>2023 &copy; Todos los derechos Reservados</p>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-light">Travel</h4>
+          <ul>
+            <li><a class="text-decoration-none nav-link text-light" href="#">Teléfono</a></li>
+            <li><a class="text-decoration-none nav-link text-light" href="#">Acerca de Nosotros</a></li>
+            <li><a class="text-decoration-none nav-link text-light" href="#">Ubicacion de la empresa</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-light">Síguenos en las redes sociales</h4>
+          <ul class="social d-flex">
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-facebook text-light ms-3 fs-1"></i></a>
+            </li>
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-instagram text-light ms-3 fs-1"></i></a>
+            </li>
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-twitter text-light ms-3 fs-1"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-light">Suscríbete a nuestro boletín</h4>
+          <form>
+            <!-- Opcional suscripcion con mail -->
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Introduce tu correo electrónico "
+                minlength="12"
+                maxlength="150"
+              />
+            </div>
+            <button type="submit" class="btn btn-outline-light btnEstilo mt-2">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </footer>
   <script>
     const nav = document.getElementById('navbar');
@@ -313,9 +356,13 @@
     //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
     window.addEventListener('scroll', () => {
       if(window.scrollY >= box.offsetHeight){
-        nav.className = ('navbar navbar-expand-lg bg-dark fixed-top');
+        nav.classList.add("bg-blue");
+        nav.classList.remove("bg-transparent");
+        //nav.className = ('navbar navbar-expand-lg bg-blue fixed-top');
       }else if(window.scrollY < box.offsetHeight){
-        nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
+        nav.classList.remove("bg-blue");
+        nav.classList.add("bg-transparent");
+        //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
       }
     }); 
   </script>

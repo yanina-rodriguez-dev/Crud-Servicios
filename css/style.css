@@ -6,7 +6,7 @@ body {
     flex-direction: column;
 }
 
-header{
+.bg-blue{
     color: aliceblue;
     background: rgb(57, 57, 247);
 }
@@ -31,4 +31,11 @@ main {
 }
 h1,h2,h3{
     font-family: 'Audiowide', cursive;
+}
+
+.btn-primary{
+    --bs-btn-bg: #021E45;
+    --bs-btn-border-color: #111B3E;
+    --bs-btn-hover-bg: #AE47EE;
+    --bs-btn-hover-border-color: #A02EF8;
 }

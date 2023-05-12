@@ -114,17 +114,13 @@ function dibujarCardReview(review){
 }
 
 function dibujarPuntuacion(puntaje){
-    console.log(parseInt(puntaje))
     let puntajeHTML = '';
     for (let i = 1; i <= parseInt(puntaje); i++) {
         puntajeHTML += '<i class="bi bi-star-fill text-warning"></i>'
-        console.log('°');
     }
     for (let j = 1; j <= (5 - parseInt(puntaje)); j++) {
         puntajeHTML += '<i class="bi bi-star-fill text-dark opacity-25"></i>'
-        console.log('°');
     }
-    console.log(puntajeHTML)
     return puntajeHTML;
 }
 
@@ -142,3 +138,8 @@ setInterval(() => {
     currentImageIndex = (currentImageIndex + 1) % images.length;
     imgDisplay.style.backgroundImage = `url(${images[currentImageIndex]})`;
     }, 5000);
+
+
+function toggleColor(){
+
+}
