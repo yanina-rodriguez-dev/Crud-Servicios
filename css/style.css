@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 body {
     min-height: 100vh;
@@ -6,9 +7,26 @@ body {
     color: white;
 }
 
+.bg-blue{
+    color: aliceblue;
+    background: rgba(4, 4, 11, 0.572);
+}
+/* FOOTER */
+footer{
+    background:rgb(9, 9, 137);
+    padding: 50px 0;
+}
+footer h4{
+margin: top 0 ;
+}
+footer ul{
+    list-style: none;
+}
+
 main {
     flex-grow: 1;
 }
+
 
 .my-class {
     display: inline-block;
@@ -48,5 +66,18 @@ main{
 .card{
     background: #00000092;
     color: white;
-   
+}
+
+.btnEstilo{
+    background-color: blueviolet;
+}
+h1,h2,h3{
+    font-family: 'Audiowide', cursive;
+}
+
+.btn-primary{
+    --bs-btn-bg: #021E45;
+    --bs-btn-border-color: #111B3E;
+    --bs-btn-hover-bg: #AE47EE;
+    --bs-btn-hover-border-color: #A02EF8;
 }
