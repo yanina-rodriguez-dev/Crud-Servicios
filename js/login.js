@@ -37,7 +37,7 @@ function iniciarSesion(usuarioIngresado, passwordIngresada) {
     passwordIngresada === passwordAdmin
   ) {
     Swal.fire({
-      title: "Administrador logueado.",
+      title: "Administrador logueado",
       icon: "success",
       background: "#121f4b",
       color: "#fff",
@@ -46,6 +46,7 @@ function iniciarSesion(usuarioIngresado, passwordIngresada) {
     });
     sesionIniciada = true;
     localStorage.setItem("sesionIniciada", sesionIniciada)
+    window.location.href = window.origin+"/pages/administrador.html"
   } else {
     Swal.fire({
       title: "Usuario o contraseña incorrectos.",
@@ -62,4 +63,15 @@ function limpiarFormulario() {
   formLogin.reset();
 }
 
+function verificarSesionIniciada(){
+  if (datosEnLocalStorage.length > 0) {
+    let contenedorLogin = document.getElementById("contenedorLogin")
+    contenedorLogin.innerHTML = `<h1>La sesión ya se encuentra iniciada. Vamos a redirigirte al panel de administrador...</h1>`
+    setTimeout(() => {
+      window.location.href = window.origin + "/pages/administrador.html";
+    }, 5000);
+  }
+}
+
+verificarSesionIniciada()
 
