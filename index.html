@@ -18,11 +18,12 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="#">Travel</a>
           <button
@@ -39,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="./index.html"
                   >Inicio</a
                 >
               </li>
@@ -72,50 +73,52 @@
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./img/fondo1.jpg"
-              class="d-block w-100 h-75"
-              alt="imagen de playa"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/fondo-4.jpg"
-              class="d-block w-100 h-75"
-              alt="Destino para vacacionar"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./img/fondo3.jpg"
-              class="d-block w-100 img-fluid h-75"
-              alt=" playa"
-            />
+      <section class="container-fluid px-0">
+        <div
+          id="img-display"
+          class="carousel slide vh-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./img/fondo1.jpg"
+                class="d-block h-100"
+                alt="imagen de playa"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/fondo-4.jpg"
+                class="d-block h-100"
+                alt="Destino para vacacionar"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./img/fondo3.jpg"
+                class="d-block h-100"
+                alt=" playa"
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="container my-4">
-        <article class="card mb-2">
+        <article class="card mb-2 animate__animated animate__fadeInLeft">
           <div class="d-flex justify-content-center">
             <i class="bi bi-airplane-engines-fill fs-1"></i>
           </div>
           <h3 class="d-flex justify-content-center">
-            Queres viajar y no sabes a donde?
+            ¿Querés viajar y no sabes a donde?
           </h3>
           <p class="d-flex justify-content-center">
-            Con nosotros tendras los mejores paquetes de viaje a todo el mundo y
+            Con nosotros tendrás los mejores paquetes de viaje a todo el mundo y
             a un precio promocional.
           </p>
         </article>
-        <article class="card mb-2">
+        <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-2s">
           <div class="d-flex justify-content-center">
             <i class="bi bi-credit-card-fill fs-1 text-primary"></i>
           </div>
@@ -125,7 +128,7 @@
             fijas. SI, le ganas a la inflacion!
           </p>
         </article>
-        <article class="card mb-2">
+        <article class="card mb-2 animate__animated animate__fadeInLeft animate__delay-3s">
           <div class="d-flex justify-content-center">
             <i class="bi bi-hearts fs-1 text-danger"></i>
           </div>
@@ -137,7 +140,7 @@
             nunca!
           </p>
         </article>
-        <article class="card mb-2">
+        <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-4s">
           <div class="d-flex justify-content-center">
             <i class="bi bi-currency-dollar fs-1 text-success"></i>
           </div>
@@ -145,22 +148,22 @@
             ¿Tus vacaciones nunca coinciden con las promos?
           </h4>
           <p class="d-flex justify-content-center">
-            No te preocupes, con nosotros tenes promos TODO EL AÑO!
+            No te preocupés, con nosotros tenés promos TODO EL AÑO!
           </p>
         </article>
       </section>
       <hr />
-      <section class="container">
-        <h2 class="my-4 d-flex justify-content-center">Obtene el mejor paquete de viaje a un precio esclusivo.</h2>
+      <section class="container-fluid parallax-bg p-3" id="paquetes">
         <!-- cards -->
         <div
-          class="row row-cols-1 row-cols-md-2 g-4 container d-flex justify-content-center"
+        class="row d-flex justify-content-center"
         >
-          <div class="card me-3" style="width: 18rem">
+        <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio esclusivo.</h2>
+          <div class="card m-2 col-lg-3 col-md-6">
             <img
               src="./img/parejaenlaPLAYA.jpg"
               class="card-img-top pt-2"
-              alt="..."
+              alt="pareja en la playa"
             />
             <div class="card-body">
               <h5 class="card-title">Cancun todo incluido</h5>
@@ -171,7 +174,7 @@
               <a href="#" class="btn btn-primary">Ver mas</a>
             </div>
           </div>
-          <div class="card me-3" style="width: 18rem">
+          <div class="card m-2 col-lg-3 col-md-6">
             <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Paris</h5>
@@ -182,7 +185,7 @@
               <a href="#" class="btn btn-primary">Ver mas</a>
             </div>
           </div>
-          <div class="card me-3" style="width: 18rem">
+          <div class="card m-2 col-lg-3 col-md-6">
             <img src="./img/roma.jpg" class="card-img-top pt-2" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Roma</h5>
@@ -193,7 +196,7 @@
               <a href="#" class="btn btn-primary">Ver mas</a>
             </div>
           </div>
-          <div class="card me-3" style="width: 18rem">
+          <div class="card m-2 col-lg-3 col-md-6">
             <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -204,7 +207,7 @@
               <a href="#" class="btn btn-primary">Ver mas</a>
             </div>
           </div>
-          <div class="card me-3" style="width: 18rem">
+          <div class="card m-2 col-lg-3 col-md-6">
             <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Rio de janeiro</h5>
@@ -215,7 +218,7 @@
               <a href="#" class="btn btn-primary">Ver mas</a>
             </div>
           </div>
-          <div class="card me-3" style="width: 18rem">
+          <div class="card m-2 col-lg-3 col-md-6">
             <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Rio de janeiro</h5>
@@ -234,11 +237,10 @@
         </div>
       </section>
       <!-- SLIDER CATEGORIAS -->
-
       <section class="">
-        <div class="container-fluid bg-warning text-center text-light p-5">
+        <div class="container-fluid d-flex bg-warning text-center text-light p-5 vh-100 align-items-center">
           <h1 class="fuente-titulos">
-            Elegi el paquete y tu unica preocupacion sera abordar el avion a
+            Elegí el paquete y tu única preocupación sera abordar el avión a
             tiempo.
           </h1>
         </div>
@@ -453,6 +455,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
