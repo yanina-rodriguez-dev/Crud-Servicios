@@ -1,466 +1,425 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Travel" />
-    <meta name="keywords" content="Travel" />
-    <meta name="author" content="Rodriguez Yanina Alejandra" />
-    <title>Principal</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light" href="#">Travel</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link active" aria-current="page" href="./index.html"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-light" href="#">Acceder</a>
-              </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-light" href="#">Nosotros</a>
-              </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-light" href="#">Contactos</a>
-              </li>
-              <li class="nav-item d-flex justify-content-center">
-                <a class="nav-link text-light" href="#">Administrador</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-light" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="container-fluid px-0">
-        <div
-          id="img-display"
-          class="carousel slide vh-100"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="./img/fondo1.jpg"
-                class="d-block h-100"
-                alt="imagen de playa"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/fondo-4.jpg"
-                class="d-block h-100"
-                alt="Destino para vacacionar"
-              />
-            </div>
-            <div class="carousel-item">
-              <img
-                src="./img/fondo3.jpg"
-                class="d-block h-100"
-                alt=" playa"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="container my-4">
-        <article class="card mb-2 animate__animated animate__fadeInLeft">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-airplane-engines-fill fs-1"></i>
-          </div>
-          <h3 class="d-flex justify-content-center">
-            ¿Querés viajar y no sabes a donde?
-          </h3>
-          <p class="d-flex justify-content-center">
-            Con nosotros tendrás los mejores paquetes de viaje a todo el mundo y
-            a un precio promocional.
-          </p>
-        </article>
-        <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-2s">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-credit-card-fill fs-1 text-primary"></i>
-          </div>
-          <h4 class="d-flex justify-content-center">Vivis en argentina?</h4>
-          <p class="d-flex justify-content-center">
-            Accede ahora y congelas el precio, ademas podes pagarlo en cuotas
-            fijas. SI, le ganas a la inflacion!
-          </p>
-        </article>
-        <article class="card mb-2 animate__animated animate__fadeInLeft animate__delay-3s">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-hearts fs-1 text-danger"></i>
-          </div>
-          <h4 class="d-flex justify-content-center">
-            ¿Porque deberias viajar?
-          </h4>
-          <p class="d-flex justify-content-center">
-            A tu ex lo podes olvidar!! a tu viaje con TRAVEL no lo olvidas
-            nunca!
-          </p>
-        </article>
-        <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-4s">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-currency-dollar fs-1 text-success"></i>
-          </div>
-          <h4 class="d-flex justify-content-center">
-            ¿Tus vacaciones nunca coinciden con las promos?
-          </h4>
-          <p class="d-flex justify-content-center">
-            No te preocupés, con nosotros tenés promos TODO EL AÑO!
-          </p>
-        </article>
-      </section>
-      <hr />
-      <section class="container-fluid parallax-bg p-3" id="paquetes">
-        <!-- cards -->
-        <div
-        class="row d-flex justify-content-center"
-        >
-        <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio esclusivo.</h2>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img
-              src="./img/parejaenlaPLAYA.jpg"
-              class="card-img-top pt-2"
-              alt="pareja en la playa"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Cancun todo incluido</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Paris</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img src="./img/roma.jpg" class="card-img-top pt-2" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Roma</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Rio de janeiro</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Ver mas</a>
-            </div>
-          </div>
-          <div class="card m-2 col-lg-3 col-md-6">
-            <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Rio de janeiro</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">ver mas</a>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Travel" />
+  <meta name="keywords" content="Travel" />
+  <meta name="author" content="Rodriguez Yanina Alejandra" />
+  <title>Principal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#">Travel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Acceder</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Contactos</a>
+            </li>
+            <li class="nav-item d-flex justify-content-center">
+              <a class="nav-link text-light" href="#">Administrador</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-        <div class="d-flex justify-content-center my-3">
-          <a href="./pages/error404.html" class="btn btn-success"
-            >Conocer todos los paquetes</a
-          >
-        </div>
-      </section>
-      <!-- SLIDER CATEGORIAS -->
-      <section class="">
-        <div class="container-fluid d-flex bg-warning text-center text-light p-5 vh-100 align-items-center">
-          <h1 class="fuente-titulos">
-            Elegí el paquete y tu única preocupación sera abordar el avión a
-            tiempo.
-          </h1>
-        </div>
-        <section class="container px-lg-6">
-          <section class="row my-4">
-            <!-- contenedor imagen -->
-            <div class="col-md-6">
-              <img
-                src="./img/riodeJaneiro.jpg"
-                alt="..."
-                class="img-fluid fs-4"
-              />
-            </div>
-            <!-- contenedor texto -->
-            <div class="col-md-6 fs-6">
-              <h3>Planes todo incluido</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
-                consequuntur laboriosam labore exercitationem! Veniam,
-                molestiae? Maiores doloribus, molestias aspernatur excepturi
-                quam repellat unde quae nisi blanditiis consequuntur ad ab
-                aliquam, repudiandae saepe adipisci dolorum architecto
-                recusandae voluptatibus laboriosam est assumenda facilis!
-                Facilis perferendis saepe vitae, accusantium quod corporis totam
-                cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
-                nulla ex dolore nihil pariatur voluptatum impedit velit
-                .
-              </p>
-            </div>
-          </section>
-          <section class="row my-4">
-            <!-- contenedor imagen -->
-            <div class="col-md-6 order-md-1">
-              <img src="./img/roma.jpg" alt="..." class="img-fluid fs-4" />
-            </div>
-            <!-- contenedor texto -->
-            <div class="col-md-6 fs-6 order-md-0">
-              <h3>Aplicacion propia con gps para que cuides a tu familia</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
-                consequuntur laboriosam labore exercitationem! Veniam,
-                molestiae? Maiores doloribus, molestias aspernatur excepturi
-                quam repellat unde quae nisi blanditiis consequuntur ad ab
-                aliquam, repudiandae saepe adipisci dolorum architecto
-                recusandae voluptatibus laboriosam est assumenda facilis!
-                Facilis perferendis saepe vitae, accusantium quod corporis totam
-                cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
-                nulla ex dolore nihil pariatur voluptatum impedit velit
-                .
-              </p>
-            </div>
-          </section>
-          <section class="row my-4">
-            <!-- contenedor imagen -->
-            <div class="col-md-6">
-              <img
-                src="./img/parejaenlaPLAYA.jpg"
-                alt="..."
-                class="img-fluid fs-4"
-              />
-            </div>
-            <!-- contenedor texto -->
-            <div class="col-md-6 fs-6">
-              <h3>Planes con seguro medico incluido</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
-                consequuntur laboriosam labore exercitationem! Veniam,
-                molestiae? Maiores doloribus, molestias aspernatur excepturi
-                quam repellat unde quae nisi blanditiis consequuntur ad ab
-                aliquam, repudiandae saepe adipisci dolorum architecto
-                recusandae voluptatibus laboriosam est assumenda facilis!
-                Facilis perferendis saepe vitae, accusantium quod corporis totam
-                cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
-                nulla ex dolore nihil pariatur voluptatum impedit velit
-                r.
-              </p>
-            </div>
-          </section>
-        </section>
-      </section>
-      <!-- PREGUNTAS FRECUENTES -->
-      <section class="container my-4">
-        <h3 class="my-4 d-flex justify-content-center">Preguntas frecuentes</h3>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-               ¿ Cual es la cobertura del seguro que brindamos?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="container-fluid px-0">
+      <div id="img-display" class="carousel slide vh-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/fondo1.jpg" class="d-block h-100" alt="imagen de playa" />
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ¿Qué es un paquete turístico?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="./img/fondo-4.jpg" class="d-block h-100" alt="Destino para vacacionar" />
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ¿De que se trata la aplicacion de Travel?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                ¿Cuáles son las ventajas de adquirir paquetes de viaje?
-              </button>
-            </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                ¿Qué debes considerar al elegir un paquete de hotel más avión?
-              </button>
-            </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="mb-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h4 class="text-light">Travel</h4>
-            <ul>
-              <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Teléfono</a
-                >
-              </li>
-              <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Acerca de Nosotros</a
-                >
-              </li>
-              <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Ubicacion de la empresa</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-light">Síguenos en las redes sociales</h4>
-            <ul class="social d-flex">
-              <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-facebook text-light ms-3 fs-1"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-instagram text-light ms-3 fs-1"></i
-                ></a>
-              </li>
-              <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-twitter text-light ms-3 fs-1"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-4">
-            <h4 class="text-light">Suscríbete a nuestro boletín</h4>
-            <form>
-              <!-- Opcional suscripcion con mail -->
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Introduce tu correo electrónico "
-                  minlength="12"
-                  maxlength="150"
-                />
-              </div>
-              <button
-                type="submit"
-                class="btn btn-outline-light btnEstilo mt-2"
-              >
-                Suscribirse
-              </button>
-            </form>
+          <div class="carousel-item">
+            <img src="./img/fondo3.jpg" class="d-block h-100" alt=" playa" />
           </div>
         </div>
       </div>
-    </footer>
-    <script src="js/app.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    </section>
+
+    <section class="container my-4">
+      <article class="card mb-2 animate__animated animate__fadeInLeft">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-airplane-engines-fill fs-1"></i>
+        </div>
+        <h3 class="d-flex justify-content-center">
+          ¿Querés viajar y no sabes a donde?
+        </h3>
+        <p class="d-flex justify-content-center">
+          Con nosotros tendrás los mejores paquetes de viaje a todo el mundo y
+          a un precio promocional.
+        </p>
+      </article>
+      <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-2s">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-credit-card-fill fs-1 text-primary"></i>
+        </div>
+        <h4 class="d-flex justify-content-center">Vivis en argentina?</h4>
+        <p class="d-flex justify-content-center">
+          Accede ahora y congelas el precio, ademas podes pagarlo en cuotas
+          fijas. SI, le ganas a la inflacion!
+        </p>
+      </article>
+      <article class="card mb-2 animate__animated animate__fadeInLeft animate__delay-3s">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-hearts fs-1 text-danger"></i>
+        </div>
+        <h4 class="d-flex justify-content-center">
+          ¿Porque deberias viajar?
+        </h4>
+        <p class="d-flex justify-content-center">
+          A tu ex lo podes olvidar!! a tu viaje con TRAVEL no lo olvidas
+          nunca!
+        </p>
+      </article>
+      <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-4s">
+        <div class="d-flex justify-content-center">
+          <i class="bi bi-currency-dollar fs-1 text-success"></i>
+        </div>
+        <h4 class="d-flex justify-content-center">
+          ¿Tus vacaciones nunca coinciden con las promos?
+        </h4>
+        <p class="d-flex justify-content-center">
+          No te preocupés, con nosotros tenés promos TODO EL AÑO!
+        </p>
+      </article>
+    </section>
+    <hr />
+    <section class="container-fluid parallax-bg p-3" id="paquetes">
+      <!-- cards -->
+      <div class="row d-flex justify-content-center">
+        <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio
+          esclusivo.</h2>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/parejaenlaPLAYA.jpg" class="card-img-top pt-2" alt="pareja en la playa" />
+          <div class="card-body">
+            <h5 class="card-title">Cancun todo incluido</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Paris</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/roma.jpg" class="card-img-top pt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Roma</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Rio de janeiro</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Ver mas</a>
+          </div>
+        </div>
+        <div class="card m-2 col-lg-3 col-md-5 col-12">
+          <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Rio de janeiro</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">ver mas</a>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center my-3">
+        <a href="./pages/error404.html" class="btn btn-success">Conocer todos los paquetes</a>
+      </div>
+    </section>
+    <!-- SLIDER CATEGORIAS -->
+    <section class="container-fluid p-0 mb-0" id="bg-video">
+      <div>
+        <video autoplay loop id="myVideo" class="img-fluid">
+          <source src="video/_import_60bc5972dcf2a6.47227908.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div id="video-text" class="text-light">
+        <h1 class="fuente-titulos">
+          Elegí el paquete y tu única preocupación será abordar el avión a
+          tiempo.
+        </h1>
+      </div>
+    </section>
+    <section class="container px-lg-6">
+      <section class="row my-3">
+        <!-- contenedor imagen -->
+        <div class="col-md-6">
+          <img src="./img/riodeJaneiro.jpg" alt="..." class="img-fluid fs-4 rounded" />
+        </div>
+        <!-- contenedor texto -->
+        <div class="col-md-6 fs-6">
+          <h3>Planes todo incluido</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
+            consequuntur laboriosam labore exercitationem! Veniam,
+            molestiae? Maiores doloribus, molestias aspernatur excepturi
+            quam repellat unde quae nisi blanditiis consequuntur ad ab
+            aliquam, repudiandae saepe adipisci dolorum architecto
+            recusandae voluptatibus laboriosam est assumenda facilis!
+            Facilis perferendis saepe vitae, accusantium quod corporis totam
+            cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
+            nulla ex dolore nihil pariatur voluptatum impedit velit
+            .
+          </p>
+        </div>
+      </section>
+      <section class="row my-4">
+        <!-- contenedor imagen -->
+        <div class="col-md-6 order-md-1">
+          <img src="./img/roma.jpg" alt="..." class="img-fluid fs-4 rounded" />
+        </div>
+        <!-- contenedor texto -->
+        <div class="col-md-6 fs-6 order-md-0">
+          <h3>Aplicacion propia con gps para que cuides a tu familia</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
+            consequuntur laboriosam labore exercitationem! Veniam,
+            molestiae? Maiores doloribus, molestias aspernatur excepturi
+            quam repellat unde quae nisi blanditiis consequuntur ad ab
+            aliquam, repudiandae saepe adipisci dolorum architecto
+            recusandae voluptatibus laboriosam est assumenda facilis!
+            Facilis perferendis saepe vitae, accusantium quod corporis totam
+            cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
+            nulla ex dolore nihil pariatur voluptatum impedit velit
+            .
+          </p>
+        </div>
+      </section>
+      <section class="row my-4">
+        <!-- contenedor imagen -->
+        <div class="col-md-6">
+          <img src="./img/parejaenlaPLAYA.jpg" alt="..." class="img-fluid fs-4 rounded" />
+        </div>
+        <!-- contenedor texto -->
+        <div class="col-md-6 fs-6">
+          <h3>Planes con seguro medico incluido</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A sit
+            consequuntur laboriosam labore exercitationem! Veniam,
+            molestiae? Maiores doloribus, molestias aspernatur excepturi
+            quam repellat unde quae nisi blanditiis consequuntur ad ab
+            aliquam, repudiandae saepe adipisci dolorum architecto
+            recusandae voluptatibus laboriosam est assumenda facilis!
+            Facilis perferendis saepe vitae, accusantium quod corporis totam
+            cupiditate incidunt iusto ipsum? Aperiam aliquid minus nostrum
+            nulla ex dolore nihil pariatur voluptatum impedit velit
+            r.
+          </p>
+        </div>
+      </section>
+    </section>
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="container py-4">
+      <h3 class="my-4 d-flex justify-content-center">Preguntas frecuentes</h3>
+      <div class="accordion" id="accordionPreguntasFrecuentes">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              ¿ Cual es la cobertura del seguro que brindamos?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Qué es un paquete turístico?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿De que se trata la aplicacion de Travel?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Cuáles son las ventajas de adquirir paquetes de viaje?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              ¿Qué debes considerar al elegir un paquete de hotel más avión?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="mb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4 class="text-light">Travel</h4>
+          <ul>
+            <li>
+              <a class="text-decoration-none nav-link text-light" href="#">Teléfono</a>
+            </li>
+            <li>
+              <a class="text-decoration-none nav-link text-light" href="#">Acerca de Nosotros</a>
+            </li>
+            <li>
+              <a class="text-decoration-none nav-link text-light" href="#">Ubicacion de la empresa</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-light">Síguenos en las redes sociales</h4>
+          <ul class="social d-flex">
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-facebook text-light ms-3 fs-1"></i></a>
+            </li>
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-instagram text-light ms-3 fs-1"></i></a>
+            </li>
+            <li>
+              <a href="./pages/error404.html"><i class="bi bi-twitter text-light ms-3 fs-1"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="text-light">Suscríbete a nuestro boletín</h4>
+          <form>
+            <!-- Opcional suscripcion con mail -->
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Introduce tu correo electrónico " minlength="12"
+                maxlength="150" />
+            </div>
+            <button type="submit" class="btn btn-outline-light btnEstilo mt-2">
+              Suscribirse
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
 <!-- TODOS LOS LINKS A REEMPLAZAR ESTAN CON # PARA ENCONTRAR MAS FACIL Y REEMPLAZAR UNA VEZ QUE SE HAYAN CREADO LAS PAGINAS  -->
