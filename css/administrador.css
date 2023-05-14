@@ -9,3 +9,11 @@ body{
     background-image: linear-gradient(0deg, #a02ef8 0%, #021e45 100%);
     min-height: 100vh;
 }
+
+main{
+    background-image: none;
+}
+
+#administracion{
+    min-height: 100vh;
+}
