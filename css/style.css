@@ -11,26 +11,9 @@ body {
     color: aliceblue;
     background: rgba(4, 4, 11, 0.572);
 }
-/* FOOTER */
-footer{
-    background:rgb(9, 9, 137);
-    padding: 50px 0;
-}
-footer h4{
-margin: top 0 ;
-}
-footer ul{
-    list-style: none;
-}
 
 main {
     flex-grow: 1;
-}
-
-
-.my-class {
-    display: inline-block;
-    max-width: 10rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -44,6 +27,8 @@ header{
     color: aliceblue;
     background: rgb(57, 57, 247);
 }
+
+
 /* FOOTER */
 footer{
     background:rgb(9, 9, 137);
@@ -52,6 +37,7 @@ footer{
 footer h4{
 margin: top 0 ;
 }
+
 footer ul{
     list-style: none;
 }
