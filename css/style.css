@@ -12,24 +12,35 @@ main {
 }
 
 /* PAGINA PRINCIPAL  */
-*{
+
+.bg-blue {
+    color: aliceblue;
+    background: rgba(4, 4, 11, 0.572);
+}
+
+/* PAGINA PRINCIPAL  */
+
+* {
     margin: 0px;
     padding: 0px;
 }
-header{
+
+header {
     color: aliceblue;
     background: rgb(57, 57, 247);
 }
 
 /* FOOTER */
-footer{
-    background:rgb(9, 9, 137);
+footer {
+    background: rgb(9, 9, 137);
     padding: 50px 0;
 }
-footer h4{
-margin: top 0 ;
+
+footer h4 {
+    margin: top 0;
 }
-footer ul{
+
+footer ul {
     list-style: none;
 }
 
@@ -44,19 +55,18 @@ h1,h2,h3{
 
 .btnEstilo{
     background-color: blueviolet;
-
 }
 
-.card{
+main {
+    background-image: url(../img/fondoplaya.jpg);
+}
+
+.card {
     background: #00000092;
     color: white;
 }
 
-.btnEstilo{
-    background-color: blueviolet;
-}
-
-.btn-primary{
+.btn-primary {
     --bs-btn-bg: #021E45;
     --bs-btn-border-color: #111B3E;
     --bs-btn-hover-bg: #AE47EE;
