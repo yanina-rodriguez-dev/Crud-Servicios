@@ -7,14 +7,15 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-    <title>Document</title>
+    <title>Administrador</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/administrador.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
@@ -76,51 +77,90 @@
                     <i class="bi bi-plus-circle fs-1 text-white"></i>
                 </button>    
             </div>
-            <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="ModalLabel">Producto</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form>
+          </nav>
+    </header>
+    <main class="container my-5">
+        <h1 class="display-4 text-center tituloFontPersonalizado">Administrar Paquetes</h1>
+        <hr>
+        <section class="d-flex justify-content-center">
+            <button class="btn btn-success" id="btnCrearPaquete" data-bs-toggle="modal" data-bs-target="#modalPaquetes">Agregar Paquete <i class="bi bi-cart-plus"></i></button>
+        </section>
+        <section class="mt-2">
+            <h2 class="display-6 text-center my-4 tituloFontPersonalizado">Paquetes de Viaje</h2>
+            <hr>
+            <article class="table-responsive">
+                <table class="table table-dark table-striped table-bordered border-secondary">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="text-white">#</th>
+                            <th scope="col" class="text-white">Código</th>
+                            <th scope="col" class="text-white">Nombre</th>
+                            <th scope="col" class="text-white">Precio</th>
+                            <th scope="col" class="text-white">Categoria</th>
+                            <th scope="col" class="text-white">Imagen</th>
+                            <th scope="col" class="text-white">Descripcion</th>
+                            <th scope="col" class="text-white">Dias</th>
+                            <th scope="col" class="text-white">Funciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaPaquete">
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+    <div class="modal fade" id="modalPaquetes" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title tituloFontPersonalizado" id="modalLabel">Ingresar Paquete</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formPaquetes">
                         <div class="mb-3">
-                          <label for="text" class="form-label">Paquete</label>
-                          <input type="text" class="form-control" id="text" placeholder="Nombre Paquete" aria-describedby="textHelp">
+                            <label for="codigo">Código</label>
+                            <input id="codigo" type="text" class="form-control" placeholder="Codigo Unico" minlength="1" maxlength="100" disabled>
                         </div>
                         <div class="mb-3">
-                          <label for="text" class="form-label">Descripción</label>
-                          <textarea class="form-control" placeholder="Descripción" id="floatingTextarea2"></textarea>
-                        </div>
-                        <div class="mb-3" id="forming">
-                          <label for="text" class="form-label">Imagen</label>
-                          <span class="float-end"><i class="btn bi bi-patch-plus fs-5"></i><i class="btn bi bi-patch-minus fs-5"></i></span>
-                          <div id="agregarImagen">
-                            <input type="text" class="form-control" placeholder="URL Imagen" id="text" aria-describedby="textHelp">
-                          </div>
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" type="text" class="form-control" placeholder="Nombre del Paquete" minlength="5" maxlength="100">
                         </div>
                         <div class="mb-3">
-                          <label for="text" class="form-label">Cantidad de Dias del Paquete</label>
-                          <select class="form-select" aria-label="Default select example">
-                            <option value="0">--</option>
-                            <option value="1">3 Dias</option>
-                            <option value="2">5 Dias</option>
-                            <option value="3">7 Dias</option>
-                            <option value="4">10 Dias</option>
-                            <option value="5">14 Dias</option>
-                          </select>  
+                            <label for="precio">Precio</label>
+                            <input id="precio" type="text" class="form-control" placeholder="Precio" minlength="4" maxlength="10">
                         </div>
                         <div class="mb-3">
-                          <label for="text" class="form-label">Precio</label>
-                          <input type="text" class="form-control" placeholder="Valor" id="text" aria-describedby="textHelp">
+                            <label for="Categoria">Categoria</label>
+                            <select id="categoria" class="form-control">
+                                <option value="" disabled>Seleccion de Categoria</option>
+                                <option value="Local">Local</option>
+                                <option value="Nacional">Nacional</option>
+                                <option value="Internacional">Internacional</option>
+                            </select>
                         </div>
-                        <div class="modal-footer">
-                          <button type="submit" class="btn btn-primary">Guardar Paquete</button>
+                        <div class="mb-3">
+                            <label for="imagen">Imagen</label>
+                            <input id="imagen" type="text" class="form-control" placeholder="URL Imagen" minlength="2" max="200">
                         </div>
-                      </form>
-                    </div>
-                  </div>
+                        <div class="mb-3">
+                            <label for="descripcion">Descripcion</label>
+                            <textarea id="descripcion" rows="4" class="form-control" placeholder="Descripcion del Contenido del Paquete" minlength="20" maxlength="100"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="dias">Dias</label>
+                            <select id="dias" class="form-control">
+                                <option value="" disabled>Seleccion de Dias</option>
+                                <option value="3 Dias">3 Dias</option>
+                                <option value="5 Dias">5 Dias</option>
+                                <option value="7 Dias">7 Dias</option>
+                                <option value="10 Dias">10 Dias</option>
+                                <option value="14 Dias">14 Dias</option>
+                            </select>
+                        </div>
+                        <div class="alert alert-danger mt-3 d-none" role="alert" id="alerta"></div>
+                        <button class="btn btn-primary" type="submit" id="btnFormulario">Cargar</button>
+                    </form>
                 </div>
             </div>
     </main>
@@ -193,5 +233,6 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="../js/app.js"></script>
-  </body>
+    <script src="../js/administrador.js" type="module"></script>
+</body>
 </html>
