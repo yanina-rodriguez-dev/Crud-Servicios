@@ -129,3 +129,50 @@ window.prepararPaquete = (codigoPaquete) => {
     modalPaquete.show();
     altaPaquete = false;
 };
+function editarPaquete(){
+    let posicionPaquete = listaPaquetes.findIndex((paquete) => paquete.codigo === codigo.value);
+    listaPaquetes[posicionPaquete].nombre = nombre.value;
+    listaPaquetes[posicionPaquete].precio = precio.value;
+    listaPaquetes[posicionPaquete].categoria = categoria.value;
+    listaPaquetes[posicionPaquete].imagen = imagen.value;
+    listaPaquetes[posicionPaquete].descripcion = descripcion.value;
+    listaPaquetes[posicionPaquete].dias = dias.value;
+    guardarEnLocalstorage();
+    let tablaPaquete = document.getElementById("tablaPaquete");
+    tablaPaquete.children[posicionPaquete].children[2].innerHTML = nombre.value
+    tablaPaquete.children[posicionPaquete].children[3].innerHTML = precio.value
+    tablaPaquete.children[posicionPaquete].children[4].innerHTML = categoria.value
+    tablaPaquete.children[posicionPaquete].children[5].children[0].innerHTML = imagen.value
+    tablaPaquete.children[posicionPaquete].children[6].children[0].innerHTML = descripcion.value
+    tablaPaquete.children[posicionPaquete].children[7].innerHTML = dias.value
+    Swal.fire(
+        "Paquete Modificado Exitosamente"
+    );
+    limpiarFormulario();
+    modalPaquete.hide();
+}
+window.borrarPaquete = (codigo) => {
+    Swal.fire({
+        title: "¿Desea Borrar el Paquete Seleccionado?",
+        text: "Este Cambio NO Puede Deshacerse",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Borrar",
+        cancelButtonText: "Cancelar",
+    }).then((result) => {
+        if(result.isConfirmed){
+            let posicionPaquete = listaPaquetes.findIndex((paquete) => paquete.codigo === codigo);
+            listaPaquetes.splice(posicionPaquete, 1);
+            guardarEnLocalstorage();
+            let tablaPaquete = document.getElementById("tablaPaquete");
+            tablaPaquete.removeChild(tablaPaquete.children[posicionPaquete]);
+            Swal.fire(
+                "Eliminado",
+                "El Paquete se Elimino Correctamente",
+                "success"
+            );
+        }
+    });
+}
