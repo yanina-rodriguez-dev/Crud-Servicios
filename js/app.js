@@ -1,6 +1,8 @@
 const nav = document.getElementById('navbar');
-const box = document.getElementById('img-display');
+const box = document.querySelector("main").children[0];
+
 console.log(box.offsetHeight)
+console.log(box)
 //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
 window.addEventListener('scroll', () => {
     if (window.scrollY >= box.offsetHeight) {
