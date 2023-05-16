@@ -1,5 +1,7 @@
 const nav = document.getElementById('navbar');
 const box = document.querySelector("main").children[0];
+const search = document.getElementById('search');
+const paquetes = document.getElementById('paquetes');
 
 console.log(box.offsetHeight)
 console.log(box)
@@ -15,3 +17,7 @@ window.addEventListener('scroll', () => {
         //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
     }
 });
+
+search.addEventListener('focus', () => {
+    paquetes.scrollIntoView({behavior: 'smooth'}, true);
+})

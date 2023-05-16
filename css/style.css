@@ -82,6 +82,10 @@ h1,h2,h3{
     position: relative;
 }
 
+#features{
+    overflow: hidden;
+}
+
 #video-text{
     background-color: #0000007a;
     position: absolute;
