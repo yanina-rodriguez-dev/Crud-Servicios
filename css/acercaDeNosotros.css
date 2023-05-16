@@ -1,0 +1,15 @@
+main{
+    background-image: none !important;
+}
+
+.container-card__developers{
+    transition: 0.3s;
+}
+
+.container-card__developers:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+nav{
+    background-color: black;
+}
