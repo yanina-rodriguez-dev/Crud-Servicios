@@ -30,7 +30,7 @@
               <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="#">Acceder</a>
+              <a class="nav-link text-light" href="./pages/administrador.html">Acceder</a>
             </li>
             <li class="nav-item d-flex justify-content-center">
               <a class="nav-link text-light" href="#">Nosotros</a>
@@ -42,10 +42,19 @@
               <a class="nav-link text-light" href="#">Administrador</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <form class="d-flex" role="search" id="formularioBusqueda">
+            <input
+             class="form-control me-2" 
+             type="search"
+             id="campoDeBusqueda"
+             placeholder="Buscar"
+             aria-label="Search"
+             minlength="2"
+             maxlength="12"
+             required
+              />
             <button class="btn btn-outline-light" type="submit">
-              Search
+             Buscar
             </button>
           </form>
         </div>
@@ -127,7 +136,7 @@
       <div class="row d-flex justify-content-center">
         <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio
           esclusivo.</h2>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/parejaenlaPLAYA.jpg" class="card-img-top pt-2" alt="pareja en la playa" />
           <div class="card-body">
             <h5 class="card-title">Cancun todo incluido</h5>
@@ -138,7 +147,7 @@
             <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Paris</h5>
@@ -149,7 +158,7 @@
             <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/roma.jpg" class="card-img-top pt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Roma</h5>
@@ -160,7 +169,7 @@
             <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
@@ -171,7 +180,7 @@
             <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Rio de janeiro</h5>
@@ -182,7 +191,7 @@
             <a href="#" class="btn btn-primary">Ver mas</a>
           </div>
         </div>
-        <div class="card m-2 col-lg-3 col-md-5 col-12">
+        <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/riodeJaneiro.jpg" class="card-img-top pt-2" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Rio de janeiro</h5>
