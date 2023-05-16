@@ -15,10 +15,18 @@ Los invitamos a visitarnos en nuestra Pagina Web (INSERTAR LINK)
 En nuestra pagina web encontrara una amplia cantidad de paquetes de viajes que se ajustaran a su comidad e interes economico. 
 
 #
-## Autores:
+## Autores 💻:
 Nuestro grupo de trabajo esta formado y caracterizado por el compañerismo y empatia ante cualquier situacion.
 
-* [Gerardo Mansilla](https://pequege.github.io/)
-* [Hector Clessi](https://github.com/hectorc2907)
-* [Yanina Rodriguez](https://github.com/yanina-rodriguez-dev)
-* [Florencia Cane]()
+- [Gerardo Mansilla](https://pequege.github.io/)
+- [Hector Clessi](https://github.com/hectorc2907)
+- [Yanina Rodriguez](https://github.com/yanina-rodriguez-dev)
+- [Florencia Cane](https://github.com/florcanee)
+- [Nicolas Herrera](https://github.com/herreranicolas)
+- [Sol Agustina Perato](https://github.com/SolPerato)
+
+#
+Como clonar el repositorio
+En una terminal ejecuta el siguiente comando:
+
+git clone : https://github.com/yanina-rodriguez-dev/Crud-Servicios.git
