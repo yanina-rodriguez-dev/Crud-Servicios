@@ -1,0 +1,1 @@
+let input_correo_suscribirse = document.getElementById("input_correo_suscribirse");
