@@ -25,39 +25,12 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/detalle.css" />
   </head>
-
-<<<<<<< HEAD
-  <body>
-    <header>
-      <nav
-      class="navbar navbar-expand-lg fixed-top"
-      id="navbar"
-      data-bs-theme="dark"
-    >
-=======
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="keywords" content="">
-  <title>Detalle</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/detalle.css">
-</head>
-
 <body>
   <header>
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar" data-bs-theme="dark">
->>>>>>> e52c794fdaf1406f3db2fa79340f6ecd04f9e4d5
       <div class="container-fluid">
         <a class="navbar-brand text-light" href="../index.html">
-          <img src="img/voyage-logo.svg" alt="logo voyage" />
+          <img src="../img/voyage-logo.svg" alt="logo voyage" />
         </a>
         <button
           class="navbar-toggler"
@@ -76,14 +49,14 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="./index.html"
+                href="../index.html"
                 >Inicio</a
               >
             </li>
             <li class="nav-item d-flex justify-content-center">
               <a
                 class="nav-link text-light"
-                href="./pages/AcercaDeNosotros.html"
+                href="./AcercaDeNosotros.html"
                 >Nosotros</a
               >
             </li>
@@ -91,7 +64,7 @@
               class="nav-item d-flex justify-content-center d-none"
               id="linkAdministrador"
             >
-              <a class="nav-link text-light" href="./pages/administrador.html"
+              <a class="nav-link text-light" href="./administrador.html"
                 >Administrador</a
               >
             </li>
@@ -111,12 +84,11 @@
               Buscar
             </button>
           </form>
-<<<<<<< HEAD
           <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mt-lg-0">
             <li class="nav-item d-flex justify-content-center">
               <a
                 class="btn btn-outline-light m-lg-2"
-                href="./pages/login.html"
+                href="./login.html"
                 id="btnIniciarSesion"
                 ><i class="bi bi-person-fill"></i
               ></a>
@@ -125,250 +97,6 @@
                 id="btnCerrarSesion"
               >
                 <i class="bi bi-box-arrow-right"></i>
-=======
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="px-0 ">
-    <!-- cambiar por un carousel -->
-    <section id="galeria"
-      class="w-100 d-flex align-items-center justify-content-center animate__animated animate__fadeIn">
-      <h1 class="text-light">Maldivas</h1>
-    </section>
-    
-    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="p-3">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page" id="paquete-categoria">Categoria de Servicio</li>
-      </ol>
-    </nav>
-    <div class="container">
-      <section class="row">
-        <section id="nombreServicio" class="col-12">
-          <aside>
-            <h1 class="mb-0" id="paquete-nombre">Título servicio</h1> <span class="text-secondary" id="paquete-codigo">código único</span>
-          </aside>
-          <aside>
-            <p>
-              <i class="bi bi-star-fill text-warning"></i><span class="text-warning"> 5 </span><a
-                href="#reviews">(999)</a>
-            </p>
-          </aside>
-        </section>
-        <aside class="col-sm-12 col-md-6 px-3">
-          <section class="row rounded m-1 p-2 p-md-3 d-flex align-items-center" id="card-prestador">
-            <aside class="col-5 ps-0">
-              <img src="https://picsum.photos/200?random=4" class="img-fluid rounded-circle m-2" alt="">
-            </aside>
-            <aside class="col-7 ps-3 text-light">
-              <p class="mb-0">Nombre <br></p>
-              <p class="text-secondary mb-0">@username</p>
-              <p><i class="bi bi-geo-alt-fill"></i> Ubicación</p>
-              <button class="btn-primary btn">Contáctame</button>
-            </aside>
-          </section>
-          <section class="py-2">
-            <h3>Descripción del paquete</h3>
-            <p id="paquete-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore recusandae delectus in cum esse
-              placeat id saepe eius laborum ipsa dicta iste, porro aliquam obcaecati accusamus est aspernatur et!</p>
-          </section>
-        </aside>
-        <aside class="col-12 col-md-6 px-3">
-          <ul class="nav nav-tabs" id="precios" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark active" id="home-tab" data-bs-toggle="tab"
-                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                aria-selected="true">Básico</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark disabled bg-secondary" id="profile-tab" data-bs-toggle="tab"
-                data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                aria-selected="false">Estándar</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark disabled bg-secondary" id="contact-tab" data-bs-toggle="tab"
-                data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
-                aria-selected="false">Premium</button>
-            </li>
-          </ul>
-          <div class="tab-content py-3 bg-light text-dark rounded-bottom" id="preciosContent">
-            <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-              tabindex="0">
-              <h4 id="paquete-precio">$999.99</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in et incidunt similique consequuntur
-                culpa numquam sunt pariatur laudantium rem velit.</p>
-              <ul class="list-unstyled">
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 1</li>
-                <li class="list-item"><i class="bi bi-check-lg opacity-25"></i> Item 2</li>
-                <li class="list-item"><i class="bi bi-check-lg opacity-25"></i> Item 3</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 4</li>
-                <li class="list-item"><i class="bi bi-check-lg opacity-25"></i> Item 5</li>
-              </ul>
-            </div>
-            <div class="tab-pane fade p-3" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-              tabindex="0">
-              <h4>$999.99</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in et incidunt similique consequuntur
-                culpa numquam sunt pariatur laudantium rem velit.</p>
-              <ul class="list-unstyled">
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 1</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 2</li>
-                <li class="list-item"><i class="bi bi-check-lg opacity-25"></i> Item 3</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 4</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 5</li>
-              </ul>
-            </div>
-            <div class="tab-pane fade p-3" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-              tabindex="0">
-              <h4>$999.99</h4>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in et incidunt similique consequuntur
-                culpa numquam sunt pariatur laudantium rem velit.</p>
-              <ul class="list-unstyled">
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 1</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 2</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 3</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 4</li>
-                <li class="list-item"><i class="bi bi-check-lg text-success"></i> Item 5</li>
-              </ul>
-            </div>
-          </div>
-          <div class="d-grid gap-2 pt-3">
-            <button class="btn-primary btn">Continuar</button>
-          </div>
-        </aside>
-      </section>
-      <hr>
-      <section id="reviews" class="px-4">
-        <h3 class="py-2">Reviews</h3>
-        <div id="carouselReviews" class="carousel slide">
-          <div class="carousel-inner mx-auto" id="cardsReview">
-            <div class="carousel-item active">
-              <aside class="card mb-3">
-                <div class="row">
-                  <div class="col-5 col-md-3 col-lg-2 pe-0">
-                    <img src="https://picsum.photos/200?random=1" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-7 col-md-9 col-lg-10">
-                    <div class="card-body px-0">
-                      <h5 class="card-title">Nombre Reviewer</h5>
-                      <p class="mb-0">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-dark opacity-25"></i>
-                        <i class="bi bi-star-fill text-dark opacity-25"></i>
-                      </p>
-                      <p class="card-text d-inline-block text-truncate mb-0">This is a wider card with supporting text
-                        below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-            <div class="carousel-item">
-              <aside class="card mb-3">
-                <div class="row">
-                  <div class="col-5 col-md-3 col-lg-2 pe-0">
-                    <img src="https://picsum.photos/200?random=2" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-7 col-md-9 col-lg-10 px-0">
-                    <div class="card-body">
-                      <h5 class="card-title">Nombre Reviewer</h5>
-                      <p class="mb-0">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-dark opacity-25"></i>
-                      </p>
-                      <p class="card-text d-inline-block text-truncate mb-0">This is a wider card with
-                        supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-            <div class="carousel-item">
-              <aside class="card mb-3">
-                <div class="row">
-                  <div class="col-5 col-md-3 col-lg-2 pe-0">
-                    <img src="https://picsum.photos/200?random=3" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-7 col-md-9 col-lg-10 px-0">
-                    <div class="card-body">
-                      <h5 class="card-title">Nombre Reviewer</h5>
-                      <p class="mb-0">
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                        <i class="bi bi-star-fill text-warning"></i>
-                      </p>
-                      <p class="card-text d-inline-block text-truncate mb-0">This is a wider
-                        card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </aside>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselReviews" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselReviews" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="d-grid gap-2 py-2 mb-3">
-          <button class="btn-primary btn" data-bs-toggle="modal" data-bs-target="#modalReview">
-            Dejar mi Review
-          </button>
-        </div>
-      </section>
-    </div>
-  </main>
-  <!-- Modal para escribir review -->
-  <div class="modal fade" id="modalReview" tabindex="-1" aria-labelledby="modalReviewLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="modalReviewLabel">Agregar Review</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form action="" id="agregar-review">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="inputNombreUsuario" placeholder="name@example.com" autofocus>
-              <label for="inputNombreUsuario">Nombre de usuario</label>
-            </div>
-            <div class="form-floating mb-3">
-              <textarea class="form-control" placeholder="Leave a comment here" id="textAreaReview"></textarea>
-              <label for="textAreaReview">Comments</label>
-            </div>
-            <div class="mb-3 rate">
-              <input type="radio" id="estrella-5" name="rate" value="5" />
-              <label for="estrella-5" title="5 estrellas">5 estrellas</label>
-              <input type="radio" id="estrella-4" name="rate" value="4" />
-              <label for="estrella-4" title="4 estrellas">4 estrellas</label>
-              <input type="radio" id="estrella-3" name="rate" value="3" />
-              <label for="estrella-3" title="3 estrellas">3 estrellas</label>
-              <input type="radio" id="estrella-2" name="rate" value="2" />
-              <label for="estrella-2" title="2 estrellas">2 estrellas</label>
-              <input type="radio" id="estrella-1" name="rate" value="1" />
-              <label for="estrella-1" title="1 estrellas">1 estrella</label>
-            </div>
-            <div class="mb-3 row">
-              <button class="btn-primary btn" type="submit">
-                Dejar mi Review
->>>>>>> e52c794fdaf1406f3db2fa79340f6ecd04f9e4d5
               </button>
             </li>
           </ul>
@@ -390,7 +118,7 @@
       >
         <ol class="breadcrumb">
           <li class="breadcrumb-item">
-            <a href="Inicio" class="text-decoration-none">Inicio</a>
+            <a href="../index.html" class="text-decoration-none">Inicio</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">
             Categoria de Servicio
@@ -800,27 +528,24 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-    <footer>
+    <footer class="mb-0">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <img src="../img/voyage-logo.svg" alt="logo voyage" />
+            <h4 class="text-light">
+              <img src="../img/voyage-logo.svg" alt="logo voyage">
+            </h4>
             <ul>
               <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Teléfono</a
-                >
+                <a class="text-decoration-none nav-link text-light" href="./error404.html">Contacto</a>
               </li>
               <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Acerca de Nosotros</a
-                >
+                <a class="text-decoration-none nav-link text-light" href="./AcercaDeNosotros.html">Acerca de
+                  Nosotros</a>
               </li>
               <li>
-                <a class="text-decoration-none nav-link text-light" href="#"
-                  >Ubicacion de la empresa</a
-                >
+                <a class="text-decoration-none nav-link text-light" href="./error404.html">Ubicacion de la
+                  empresa</a>
               </li>
             </ul>
           </div>
@@ -828,19 +553,13 @@
             <h4 class="text-light">Síguenos en las redes sociales</h4>
             <ul class="social d-flex">
               <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-facebook text-light ms-3 fs-1"></i
-                ></a>
+                <a href="./error404.html"><i class="bi bi-facebook text-light ms-3 fs-1"></i></a>
               </li>
               <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-instagram text-light ms-3 fs-1"></i
-                ></a>
+                <a href="./error404.html"><i class="bi bi-instagram text-light ms-3 fs-1"></i></a>
               </li>
               <li>
-                <a href="./pages/error404.html"
-                  ><i class="bi bi-twitter text-light ms-3 fs-1"></i
-                ></a>
+                <a href="./error404.html"><i class="bi bi-twitter text-light ms-3 fs-1"></i></a>
               </li>
             </ul>
           </div>
@@ -849,18 +568,10 @@
             <form>
               <!-- Opcional suscripcion con mail -->
               <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Introduce tu correo electrónico "
-                  minlength="12"
-                  maxlength="150"
-                />
+                <input type="email" class="form-control" placeholder="Introduce tu correo electrónico " minlength="12"
+                  maxlength="150" />
               </div>
-              <button
-                type="submit"
-                class="btn btn-outline-light btnEstilo mt-2"
-              >
+              <button type="submit" class="btn btn-outline-light btnEstilo mt-2">
                 Suscribirse
               </button>
             </form>
@@ -868,17 +579,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/app.js"></script>
-    <script src="../js/review.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-      crossorigin="anonymous"
-    ></script>
-  </body>
-</html>
-=======
-  </footer>
   <script src="../js/app.js"></script>
   <script src="../js/detalle.js"></script>
   <script src="../js/review.js"></script>
@@ -888,4 +588,3 @@
 </body>
 
 </html>
->>>>>>> e52c794fdaf1406f3db2fa79340f6ecd04f9e4d5
