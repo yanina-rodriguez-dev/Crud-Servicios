@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,15 +33,12 @@
               <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="./pages/login.html">Acceder</a>
-            </li>
-            <li class="nav-item d-flex justify-content-center">
               <a class="nav-link text-light" href="./pages/AcercaDeNosotros.html">Nosotros</a>
             </li>
             <li class="nav-item d-flex justify-content-center">
               <a class="nav-link text-light" href="./pages/error404.html">Contactos</a>
             </li>
-            <li class="nav-item d-flex justify-content-center">
+            <li class="nav-item d-flex justify-content-center d-none" id="linkAdministrador">
               <a class="nav-link text-light" href="./pages/administrador.html">Administrador</a>
             </li>
           </ul>
@@ -51,6 +49,14 @@
               Buscar
             </button>
           </form>
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item d-flex justify-content-center ">
+              <a class="btn btn-outline-light m-lg-2" href="./pages/login.html" id="btnIniciarSesion"><i
+                  class="bi bi-person-fill"></i></a>
+              <button class="btn btn-outline-light m-lg-2 d-none" id="btnCerrarSesion"><i
+                  class="bi bi-box-arrow-right"></i></button>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -69,7 +75,7 @@
         <h1 class="px-2 px-md-5">
           Elegí tu paquete y que la única preocupación sea abordar el avión a tiempo.
         </h1>
-        <a href="pages/login.html" class="btn btn-primary m-3 p-3 mt-5"> 
+        <a href="pages/login.html" class="btn btn-primary m-3 p-3 mt-5">
           <h2 class="mb-0">Empezar ahora</h2>
         </a>
       </div>
@@ -127,7 +133,7 @@
           </h3>
           <p class="d-flex justify-content-center">
             No te preocupés, con nosotros tenés promos ¡TODO EL AÑO!
-        </p>
+          </p>
         </div>
       </article>
     </section>
@@ -137,7 +143,7 @@
       <div class="row d-flex justify-content-center">
         <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio
           esclusivo.</h2>
-          <h2 id="sincoincidencias" class="fs-2 d-none">No se encontraron coincidencias</h2>
+        <h2 id="sincoincidencias" class="fs-2 d-none">No se encontraron coincidencias</h2>
         <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/parejaenlaPLAYA.jpg" class="card-img-top pt-2" alt="pareja en la playa" />
           <div class="card-body">
@@ -182,7 +188,7 @@
               <button class="btn btn-outline-light precio">$90.000</button>
             </div>
           </div>
-          
+
         </div>
         <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
           <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
@@ -245,7 +251,9 @@
         <div class="col-md-6 fs-6 text-bg-dark p-4">
           <h3>Planes todo incluido</h3>
           <p>
-            ¿Quieres maximizar tu tiempo en el destino? Nuestros planes con todo incluido te permiten disfrutar de todas las actividades y excursiones que el destino tiene para ofrecer sin tener que preocuparte por organizar nada. Todo está planificado de antemano para que puedas disfrutar de tus vacaciones al máximo.
+            ¿Quieres maximizar tu tiempo en el destino? Nuestros planes con todo incluido te permiten disfrutar de todas
+            las actividades y excursiones que el destino tiene para ofrecer sin tener que preocuparte por organizar
+            nada. Todo está planificado de antemano para que puedas disfrutar de tus vacaciones al máximo.
           </p>
         </div>
       </section>
@@ -258,7 +266,10 @@
         <div class="col-md-6 fs-6 order-md-0 text-bg-dark p-4">
           <h3>Aplicacion propia con gps para que cuides a tu familia</h3>
           <p>
-            ¡Mantén a tu familia segura durante todo el viaje! Con nuestra aplicación propia con GPS, puedes estar seguro de que tus seres queridos están a salvo mientras viajan. La aplicación te permite ver su ubicación en tiempo real y recibir alertas si salen de un área preestablecida, lo que te da tranquilidad mientras disfrutas de tus vacaciones.
+            ¡Mantén a tu familia segura durante todo el viaje! Con nuestra aplicación propia con GPS, puedes estar
+            seguro de que tus seres queridos están a salvo mientras viajan. La aplicación te permite ver su ubicación en
+            tiempo real y recibir alertas si salen de un área preestablecida, lo que te da tranquilidad mientras
+            disfrutas de tus vacaciones.
           </p>
         </div>
       </section>
@@ -271,7 +282,11 @@
         <div class="col-md-6 fs-6 text-bg-dark p-4">
           <h3>Planes con seguro medico incluido</h3>
           <p>
-            Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja, independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente, quienes estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades específicas de viaje.
+            Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja,
+            independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la
+            cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente, quienes
+            estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades específicas
+            de viaje.
           </p>
         </div>
       </section>
@@ -282,15 +297,22 @@
       <div class="accordion" id="accordionPreguntasFrecuentes">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button text-bg-secondary" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               ¿ Cual es la cobertura del seguro que brindamos?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPreguntasFrecuentes">
             <div class="accordion-body">
-              <p>En nuestra página de venta de vuelos con paquetes, ofrecemos una variedad de opciones de seguro médico para garantizar que esté protegido mientras viaja. Las opciones de cobertura varían según el plan de seguro que elija y pueden incluir cobertura para emergencias médicas, accidentes personales, cancelación de viajes y otros gastos relacionados con el viaje.</p>
-            <p>Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja, independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente, quienes estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades específicas de viaje.</p>
+              <p>En nuestra página de venta de vuelos con paquetes, ofrecemos una variedad de opciones de seguro médico
+                para garantizar que esté protegido mientras viaja. Las opciones de cobertura varían según el plan de
+                seguro que elija y pueden incluir cobertura para emergencias médicas, accidentes personales, cancelación
+                de viajes y otros gastos relacionados con el viaje.</p>
+              <p>Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja,
+                independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la
+                cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente,
+                quienes estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades
+                específicas de viaje.</p>
             </div>
           </div>
         </div>
@@ -303,7 +325,15 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
             <div class="accordion-body">
-              <p>Un paquete turístico es una opción de viaje completa que incluye varios servicios de viaje, como transporte, alojamiento, comidas, visitas turísticas y, a menudo, actividades adicionales. Los paquetes turísticos están diseñados para brindarte una experiencia de viaje completa y sin estrés, y pueden ser una excelente opción para aquellos que desean experimentar lo mejor de un destino sin tener que preocuparse por organizar cada detalle por separado.Los paquetes turísticos pueden variar en términos de duración, destino y precio, y generalmente están disponibles en diferentes niveles de comodidad y lujo. Por ejemplo, algunos paquetes turísticos pueden ofrecer alojamiento de lujo en un hotel de cinco estrellas, mientras que otros pueden incluir alojamiento en albergues económicos o hoteles de tres estrellas.</p>
+              <p>Un paquete turístico es una opción de viaje completa que incluye varios servicios de viaje, como
+                transporte, alojamiento, comidas, visitas turísticas y, a menudo, actividades adicionales. Los paquetes
+                turísticos están diseñados para brindarte una experiencia de viaje completa y sin estrés, y pueden ser
+                una excelente opción para aquellos que desean experimentar lo mejor de un destino sin tener que
+                preocuparse por organizar cada detalle por separado.Los paquetes turísticos pueden variar en términos de
+                duración, destino y precio, y generalmente están disponibles en diferentes niveles de comodidad y lujo.
+                Por ejemplo, algunos paquetes turísticos pueden ofrecer alojamiento de lujo en un hotel de cinco
+                estrellas, mientras que otros pueden incluir alojamiento en albergues económicos o hoteles de tres
+                estrellas.</p>
             </div>
           </div>
         </div>
@@ -333,13 +363,27 @@
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
             <div class="accordion-body">
-              Ahorro de tiempo y esfuerzo: Al adquirir un paquete de viaje, ahorras tiempo y esfuerzo al no tener que preocuparte por reservar cada detalle de tu viaje por separado. Los paquetes de viaje suelen incluir transporte, alojamiento, comidas y visitas turísticas, lo que significa que no tienes que preocuparte por planificar cada aspecto de tu viaje
-              Ahorro de dinero: Los paquetes de viaje suelen ser más económicos que si reservaras cada detalle por separado. Los proveedores de paquetes turísticos a menudo obtienen precios más bajos debido a sus acuerdos con aerolíneas, hoteles y otros proveedores de servicios turísticos. Además, puedes encontrar descuentos adicionales en los paquetes de viaje al comprar con anticipación.
-              Experiencia más completa: Los paquetes de viaje suelen incluir visitas turísticas y actividades que te permiten experimentar lo mejor de un destino. Esto te permite tener una experiencia más completa y enriquecedora, especialmente si estás visitando un lugar por primera vez.             
-              Atención personalizada: Muchas empresas de paquetes turísticos ofrecen atención personalizada para ayudarte a planificar tu viaje. Esto incluye recomendaciones de lugares de interés, asesoramiento sobre opciones de transporte y alojamiento, y consejos sobre cómo maximizar tu tiempo en el destino.
-              Tranquilidad: Al adquirir un paquete de viaje, puedes estar seguro de que todo ha sido planificado de antemano, lo que te brinda tranquilidad durante tus vacaciones. Además, si algo sale mal, como un retraso en el vuelo o una cancelación de última hora, el proveedor de paquetes turísticos se encarga de solucionarlo, lo que te permite disfrutar de tu viaje sin preocupaciones.
-              En resumen, los paquetes de viaje ofrecen una amplia variedad de beneficios, que incluyen ahorro de tiempo y dinero, una experiencia más completa, atención personalizada y tranquilidad durante tus vacaciones.
-                            
+              Ahorro de tiempo y esfuerzo: Al adquirir un paquete de viaje, ahorras tiempo y esfuerzo al no tener que
+              preocuparte por reservar cada detalle de tu viaje por separado. Los paquetes de viaje suelen incluir
+              transporte, alojamiento, comidas y visitas turísticas, lo que significa que no tienes que preocuparte por
+              planificar cada aspecto de tu viaje
+              Ahorro de dinero: Los paquetes de viaje suelen ser más económicos que si reservaras cada detalle por
+              separado. Los proveedores de paquetes turísticos a menudo obtienen precios más bajos debido a sus acuerdos
+              con aerolíneas, hoteles y otros proveedores de servicios turísticos. Además, puedes encontrar descuentos
+              adicionales en los paquetes de viaje al comprar con anticipación.
+              Experiencia más completa: Los paquetes de viaje suelen incluir visitas turísticas y actividades que te
+              permiten experimentar lo mejor de un destino. Esto te permite tener una experiencia más completa y
+              enriquecedora, especialmente si estás visitando un lugar por primera vez.
+              Atención personalizada: Muchas empresas de paquetes turísticos ofrecen atención personalizada para
+              ayudarte a planificar tu viaje. Esto incluye recomendaciones de lugares de interés, asesoramiento sobre
+              opciones de transporte y alojamiento, y consejos sobre cómo maximizar tu tiempo en el destino.
+              Tranquilidad: Al adquirir un paquete de viaje, puedes estar seguro de que todo ha sido planificado de
+              antemano, lo que te brinda tranquilidad durante tus vacaciones. Además, si algo sale mal, como un retraso
+              en el vuelo o una cancelación de última hora, el proveedor de paquetes turísticos se encarga de
+              solucionarlo, lo que te permite disfrutar de tu viaje sin preocupaciones.
+              En resumen, los paquetes de viaje ofrecen una amplia variedad de beneficios, que incluyen ahorro de tiempo
+              y dinero, una experiencia más completa, atención personalizada y tranquilidad durante tus vacaciones.
+
             </div>
           </div>
         </div>
@@ -375,10 +419,12 @@
               <a class="text-decoration-none nav-link text-light" href="./pages/error404.html">Teléfono</a>
             </li>
             <li>
-              <a class="text-decoration-none nav-link text-light" href="./pages/AcercaDeNosotros.html">Acerca de Nosotros</a>
+              <a class="text-decoration-none nav-link text-light" href="./pages/AcercaDeNosotros.html">Acerca de
+                Nosotros</a>
             </li>
             <li>
-              <a class="text-decoration-none nav-link text-light" href="./pages/error404.html">Ubicacion de la empresa</a>
+              <a class="text-decoration-none nav-link text-light" href="./pages/error404.html">Ubicacion de la
+                empresa</a>
             </li>
           </ul>
         </div>
@@ -412,8 +458,10 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/verificarSesionIniciada.js"></script>
   <script src="./js/logicaBusqueda.js"></script>
-  <script src="js/app.js"></script>
+  <script src="./js/app.js" type="module"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
