@@ -1,15 +1,14 @@
-#img-display{
+#galeria{
     background-image: url('../img/maldives-01.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    scroll-margin: 2em;
     transition: background-image 2s ease-in-out;
 }
 
-#img-display h1{
+#galeria h1{
     filter: drop-shadow(0px 0px 3px #000);
 }
 
@@ -34,20 +33,6 @@
 
 .carousel-control-prev-icon, .carousel-control-next-icon{
     filter: drop-shadow(0px 0px 3px #000);
-}
-.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-
-.fade-out {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-
-.navbar{
-    filter: drop-shadow(0px 0px 3px #000);
-    transition: all 0.5s;
 }
 
 #card-prestador aside:nth-child(2) p:first-child{
