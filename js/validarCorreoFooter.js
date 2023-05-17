@@ -16,3 +16,8 @@ function validarCorreo(){
         form.appendChild(informeDeError);
     }
 }
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    validarCorreo();
+});
