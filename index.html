@@ -1,313 +1,612 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Venta de vuelos para viajes a todoe l mundo" />
+    <meta name="keywords" content="paquetes de viajes, vuelos, turismo, precios bajos" />
+    <meta name="author" content="Rodriguez Yanina Alejandra" />
+    <link rel="shortcut icon" href="./img/voyage-logo.svg" type="image/x-icon">
+    <title>VoyAge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Travel" />
-  <meta name="keywords" content="Travel" />
-  <meta name="author" content="Rodriguez Yanina Alejandra" />
-  <title>Principal</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <link rel="stylesheet" href="./css/style.css" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">
-          <img src="img/voyage-logo.svg" alt="logo voyage">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-            </li>
-            <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="./pages/AcercaDeNosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item d-flex justify-content-center d-none" id="linkAdministrador">
-              <a class="nav-link text-light" href="./pages/administrador.html">Administrador</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search" id="formularioBusqueda">
-            <input class="form-control me-2" type="search" id="campoDeBusqueda" placeholder="Buscar" aria-label="Search"
-              minlength="2" maxlength="12" required />
-            <button class="btn btn-outline-light" type="submit">
-              Buscar
-            </button>
-          </form>
-          <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mt-lg-0">
-            <li class="nav-item d-flex justify-content-center ">
-              <a class="btn btn-outline-light m-lg-2" href="./pages/login.html" id="btnIniciarSesion"><i
-                  class="bi bi-person-fill"></i></a>
-              <button class="btn btn-outline-light m-lg-2 d-none" id="btnCerrarSesion"><i
-                  class="bi bi-box-arrow-right"></i></button>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="bg-dark">
-    <section class="container-fluid p-0 mb-0" id="bg-video">
-      <div class="video-container">
-        <video autoplay loop id="myVideo" class="img-fluid d-none d-md-block">
-          <source src="video/_import_60bc5972dcf2a6.47227908.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop id="myVideo" class="img-fluid d-md-none d-block">
-          <source src="video/_import_60bc5972dcf2a6.47227908-portrait.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div id="video-text" class="text-light">
-        <h1 class="px-2 px-md-5">
-          Elegí tu paquete y que la única preocupación sea abordar el avión a tiempo.
-        </h1>
-        <a href="pages/login.html" class="btn btn-primary m-3 p-3 mt-5">
-          <h2 class="mb-0">Empezar ahora <i class="bi bi-airplane-fill"></i></h2>
-        </a>
-      </div>
-    </section>
-    <section class="container my-4" id="features">
-      <article class="card mb-2 animate__animated animate__fadeInRight">
-        <div class="card-body">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-airplane-engines-fill fs-1"></i>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        id="navbar"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">
+            <img src="img/voyage-logo.svg" alt="logo voyage" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="nav-link text-light"
+                  href="./pages/acercaDeNosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li
+                class="nav-item d-flex justify-content-center d-none"
+                id="linkAdministrador"
+              >
+                <a class="nav-link text-light" href="./pages/administrador.html"
+                  >Administrador</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="formularioBusqueda">
+              <input
+                class="form-control me-2"
+                type="search"
+                id="campoDeBusqueda"
+                placeholder="Buscar"
+                aria-label="Search"
+                minlength="2"
+                maxlength="12"
+                required
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Buscar
+              </button>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mt-lg-0">
+              <li class="nav-item d-flex justify-content-center">
+                <a
+                  class="btn btn-outline-light m-lg-2"
+                  href="./pages/login.html"
+                  id="btnIniciarSesion"
+                  ><i class="bi bi-person-fill"></i
+                ></a>
+                <button
+                  class="btn btn-outline-light m-lg-2 d-none"
+                  id="btnCerrarSesion"
+                >
+                  <i class="bi bi-box-arrow-right"></i>
+                </button>
+              </li>
+            </ul>
           </div>
-          <h3 class="d-flex justify-content-center">
-            ¿Querés viajar y no sabes a donde?
-          </h3>
-          <p class="d-flex justify-content-center">
-            Con nosotros tendrás los mejores paquetes de viaje a todo el mundo y
-            a un precio promocional.
-          </p>
         </div>
-      </article>
-      <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-1s">
-        <div class="card-body">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-credit-card-fill fs-1 text-primary"></i>
-          </div>
-          <h3 class="d-flex justify-content-center">
-            ¿Vivis en argentina?
-          </h3>
-          <p class="d-flex justify-content-center">
-            Accede ahora y congelas el precio, ademas podes pagarlo en cuotas
-            fijas. ¡SI! le ganas a la inflacion.
-          </p>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid p-0 mb-0" id="bg-video">
+        <div class="video-container">
+          <video autoplay loop id="myVideo" class="img-fluid d-none d-md-block">
+            <source
+              src="video/_import_60bc5972dcf2a6.47227908.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <video autoplay loop id="myVideo" class="img-fluid d-md-none d-block">
+            <source
+              src="video/_import_60bc5972dcf2a6.47227908-portrait.mp4"
+              type="video/mp4"
+            />
+          </video>
         </div>
-      </article>
-      <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-2s">
-        <div class="card-body">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-hearts fs-1 text-danger"></i>
-          </div>
-          <h3 class="d-flex justify-content-center">
-            ¿Porque deberias viajar?
-          </h3>
-          <p class="d-flex justify-content-center">
-            A tu ex lo podes olvidar... <br>
-            ¡A tu viaje con TRAVEL no lo olvidás nunca!
-          </p>
-        </div>
-      </article>
-      <article class="card mb-2 animate__animated animate__fadeInRight animate__delay-3s">
-        <div class="card-body">
-          <div class="d-flex justify-content-center">
-            <i class="bi bi-currency-dollar fs-1 text-success"></i>
-          </div>
-          <h3 class="d-flex justify-content-center">
-            ¿Tus vacaciones nunca coinciden con las promos?
-          </h3>
-          <p class="d-flex justify-content-center">
-            No te preocupés, con nosotros tenés promos ¡TODO EL AÑO!
-          </p>
-        </div>
-      </article>
-    </section>
-    <hr />
-    <section class="container-fluid parallax-bg p-3" id="paquetes">
-      <!-- cards -->
-      <div class="row d-flex justify-content-center" id="container-paquetes">
-        <h2 class="my-4 d-flex justify-content-center text-light">Obtené el mejor paquete de viaje a un precio
-          esclusivo.</h2>
-        <h2 id="sincoincidencias" class="fs-2 d-none">No se encontraron coincidencias</h2>
-      </div>
-      <div class="d-flex justify-content-center my-3">
-        <a href="./pages/error404.html" class="btn btn-success">Conocer todos los paquetes</a>
-      </div>
-    </section>
-    <!-- SLIDER CATEGORIAS -->
-    <section class="container px-lg-6">
-      <section class="row my-3">
-        <!-- contenedor imagen -->
-        <div class="col-md-6">
-          <img src="./img/riodeJaneiro.jpg" alt="..." class="img-fluid fs-4 rounded" />
-        </div>
-        <!-- contenedor texto -->
-        <div class="col-md-6 fs-6 text-bg-dark p-4">
-          <h3>Planes todo incluido</h3>
-          <p>
-            ¿Quieres maximizar tu tiempo en el destino? Nuestros planes con todo incluido te permiten disfrutar de todas
-            las actividades y excursiones que el destino tiene para ofrecer sin tener que preocuparte por organizar
-            nada. Todo está planificado de antemano para que puedas disfrutar de tus vacaciones al máximo.
-          </p>
+        <div id="video-text" class="text-light">
+          <h1 class="px-2 px-md-5">
+            Elegí tu paquete y que la única preocupación sea abordar el avión a
+            tiempo.
+          </h1>
+          <a href="pages/login.html" class="btn btn-primary m-3 p-3 mt-5">
+            <h2 class="mb-0">Empezar ahora</h2>
+          </a>
         </div>
       </section>
-      <section class="row my-4">
-        <!-- contenedor imagen -->
-        <div class="col-md-6 order-md-1">
-          <img src="./img/roma.jpg" alt="Roma" class="img-fluid fs-4 rounded" />
+      <section class="container my-4" id="features">
+        <article class="card mb-2 animate__animated animate__fadeInRight">
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <i class="bi bi-airplane-engines-fill fs-1"></i>
+            </div>
+            <h3 class="d-flex justify-content-center">
+              ¿Querés viajar y no sabes a donde?
+            </h3>
+            <p class="d-flex justify-content-center">
+              Con nosotros tendrás los mejores paquetes de viaje a todo el mundo
+              y a un precio promocional.
+            </p>
+          </div>
+        </article>
+        <article
+          class="card mb-2 animate__animated animate__fadeInRight animate__delay-1s"
+        >
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <i class="bi bi-credit-card-fill fs-1 text-primary"></i>
+            </div>
+            <h3 class="d-flex justify-content-center">¿Vivis en argentina?</h3>
+            <p class="d-flex justify-content-center">
+              Accede ahora y congelas el precio, ademas podes pagarlo en cuotas
+              fijas. ¡SI! le ganas a la inflacion.
+            </p>
+          </div>
+        </article>
+        <article
+          class="card mb-2 animate__animated animate__fadeInRight animate__delay-2s"
+        >
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <i class="bi bi-hearts fs-1 text-danger"></i>
+            </div>
+            <h3 class="d-flex justify-content-center">
+              ¿Porque deberias viajar?
+            </h3>
+            <p class="d-flex justify-content-center">
+              A tu ex lo podes olvidar... <br />
+              ¡A tu viaje con TRAVEL no lo olvidás nunca!
+            </p>
+          </div>
+        </article>
+        <article
+          class="card mb-2 animate__animated animate__fadeInRight animate__delay-3s"
+        >
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
+              <i class="bi bi-currency-dollar fs-1 text-success"></i>
+            </div>
+            <h3 class="d-flex justify-content-center">
+              ¿Tus vacaciones nunca coinciden con las promos?
+            </h3>
+            <p class="d-flex justify-content-center">
+              No te preocupés, con nosotros tenés promos ¡TODO EL AÑO!
+            </p>
+          </div>
+        </article>
+      </section>
+      <hr />
+      <section class="container-fluid parallax-bg p-3" id="paquetes">
+        <!-- cards -->
+        <div class="row d-flex justify-content-center">
+          <h2 class="my-4 d-flex justify-content-center text-light">
+            Obtené el mejor paquete de viaje a un precio esclusivo.
+          </h2>
+          <h2 id="sincoincidencias" class="fs-2 d-none">
+            No se encontraron coincidencias
+          </h2>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img
+              src="./img/parejaenlaPLAYA.jpg"
+              class="card-img-top pt-2"
+              alt="pareja en la playa"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cancun todo incluido</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Paris</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img src="./img/roma.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Roma</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img src="./img/paris.jpg" class="card-img-top pt-2" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img
+              src="./img/riodeJaneiro.jpg"
+              class="card-img-top pt-2"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rio de janeiro</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo"
+          >
+            <img
+              src="./img/riodeJaneiro.jpg"
+              class="card-img-top pt-2"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Rio de janeiro</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <p class="dias">7 DIAS</p>
+              <div class="d-flex justify-content-around">
+                <a href="./pages/detalle.html" class="btn btn-primary"
+                  >Ver mas</a
+                >
+                <button class="btn btn-outline-light precio">$90.000</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- contenedor texto -->
-        <div class="col-md-6 fs-6 order-md-0 text-bg-dark p-4">
-          <h3>Aplicacion propia con gps para que cuides a tu familia</h3>
-          <p>
-            ¡Mantén a tu familia segura durante todo el viaje! Con nuestra aplicación propia con GPS, puedes estar
-            seguro de que tus seres queridos están a salvo mientras viajan. La aplicación te permite ver su ubicación en
-            tiempo real y recibir alertas si salen de un área preestablecida, lo que te da tranquilidad mientras
-            disfrutas de tus vacaciones.
-          </p>
+        <div class="d-flex justify-content-center my-3">
+          <a href="./pages/error404.html" class="btn btn-outline-light btnEstilo mt-2"
+            >Conocer todos los paquetes</a
+          >
         </div>
       </section>
-      <section class="row my-4">
-        <!-- contenedor imagen -->
-        <div class="col-md-6">
-          <img src="./img/parejaenlaPLAYA.jpg" alt="..." class="img-fluid fs-4 rounded" />
-        </div>
-        <!-- contenedor texto -->
-        <div class="col-md-6 fs-6 text-bg-dark p-4">
-          <h3>Planes con seguro medico incluido</h3>
-          <p>
-            Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja,
-            independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la
-            cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente, quienes
-            estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades específicas
-            de viaje.
-          </p>
-        </div>
+      <!-- SLIDER CATEGORIAS -->
+      <section class="container px-lg-6">
+        <h3 class="d-flex justify-content-center mt-4">Conoce nuestras novedades</h3>
+        <section class="row my-3">
+          <!-- contenedor imagen -->
+          <div class="col-md-6">
+            <img
+              src="./img/riodeJaneiro.jpg"
+              alt="..."
+              class="img-fluid fs-4 rounded"
+            />
+          </div>
+          <!-- contenedor texto -->
+          <div class="col-md-6 fs-6 text-bg-dark p-4">
+            <h3>Planes todo incluido</h3>
+            <p>
+              ¿Quieres maximizar tu tiempo en el destino? Nuestros planes con
+              todo incluido te permiten disfrutar de todas las actividades y
+              excursiones que el destino tiene para ofrecer sin tener que
+              preocuparte por organizar nada. Todo está planificado de antemano
+              para que puedas disfrutar de tus vacaciones al máximo.
+            </p>
+          </div>
+        </section>
+        <section class="row my-4">
+          <!-- contenedor imagen -->
+          <div class="col-md-6 order-md-1">
+            <img
+              src="./img/roma.jpg"
+              alt="Roma"
+              class="img-fluid fs-4 rounded"
+            />
+          </div>
+          <!-- contenedor texto -->
+          <div class="col-md-6 fs-6 order-md-0 text-bg-dark p-4">
+            <h3>Aplicacion propia con gps para que cuides a tu familia</h3>
+            <p>
+              ¡Mantén a tu familia segura durante todo el viaje! Con nuestra
+              aplicación propia con GPS, puedes estar seguro de que tus seres
+              queridos están a salvo mientras viajan. La aplicación te permite
+              ver su ubicación en tiempo real y recibir alertas si salen de un
+              área preestablecida, lo que te da tranquilidad mientras disfrutas
+              de tus vacaciones.
+            </p>
+          </div>
+        </section>
+        <section class="row my-4">
+          <!-- contenedor imagen -->
+          <div class="col-md-6">
+            <img
+              src="./img/parejaenlaPLAYA.jpg"
+              alt="..."
+              class="img-fluid fs-4 rounded"
+            />
+          </div>
+          <!-- contenedor texto -->
+          <div class="col-md-6 fs-6 text-bg-dark p-4">
+            <h3>Planes con seguro medico incluido</h3>
+            <p>
+              Nuestros planes de seguro médico están diseñados para brindarle
+              tranquilidad mientras viaja, independientemente de si está de
+              vacaciones o en un viaje de negocios. Si tiene alguna pregunta
+              sobre la cobertura de nuestro seguro médico, no dude en contactar
+              con nuestro equipo de atención al cliente, quienes estarán
+              encantados de ayudarte a seleccionar la mejor opción de cobertura
+              para tus necesidades específicas de viaje.
+            </p>
+          </div>
+        </section>
       </section>
-    </section>
-    <!-- PREGUNTAS FRECUENTES -->
-    <section class="container py-4">
-      <hr class="text-light">
-      <h3 class="my-4 d-flex justify-content-center text-light">Preguntas frecuentes</h3>
-      <div class="accordion" id="accordionPreguntasFrecuentes" data-bs-theme="dark">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button text-bg-secondary" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              ¿ Cual es la cobertura del seguro que brindamos?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionPreguntasFrecuentes">
-            <div class="accordion-body">
-              <p>En nuestra página de venta de vuelos con paquetes, ofrecemos una variedad de opciones de seguro médico
-                para garantizar que esté protegido mientras viaja. Las opciones de cobertura varían según el plan de
-                seguro que elija y pueden incluir cobertura para emergencias médicas, accidentes personales, cancelación
-                de viajes y otros gastos relacionados con el viaje.</p>
-              <p>Nuestros planes de seguro médico están diseñados para brindarle tranquilidad mientras viaja,
-                independientemente de si está de vacaciones o en un viaje de negocios. Si tiene alguna pregunta sobre la
-                cobertura de nuestro seguro médico, no dude en contactar con nuestro equipo de atención al cliente,
-                quienes estarán encantados de ayudarte a seleccionar la mejor opción de cobertura para tus necesidades
-                específicas de viaje.</p>
+      <!-- PREGUNTAS FRECUENTES -->
+      <section class="container py-4">
+        <h3 class="my-4 d-flex justify-content-center">Preguntas frecuentes</h3>
+        <div class="accordion" id="accordionPreguntasFrecuentes">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button text-bg-secondary"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                ¿ Cual es la cobertura del seguro que brindamos?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionPreguntasFrecuentes"
+            >
+              <div class="accordion-body">
+                <p>
+                  En nuestra página de venta de vuelos con paquetes, ofrecemos
+                  una variedad de opciones de seguro médico para garantizar que
+                  esté protegido mientras viaja. Las opciones de cobertura
+                  varían según el plan de seguro que elija y pueden incluir
+                  cobertura para emergencias médicas, accidentes personales,
+                  cancelación de viajes y otros gastos relacionados con el
+                  viaje.
+                </p>
+                <p>
+                  Nuestros planes de seguro médico están diseñados para
+                  brindarle tranquilidad mientras viaja, independientemente de
+                  si está de vacaciones o en un viaje de negocios. Si tiene
+                  alguna pregunta sobre la cobertura de nuestro seguro médico,
+                  no dude en contactar con nuestro equipo de atención al
+                  cliente, quienes estarán encantados de ayudarte a seleccionar
+                  la mejor opción de cobertura para tus necesidades específicas
+                  de viaje.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              ¿Qué es un paquete turístico?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
-            <div class="accordion-body">
-              <p>Un paquete turístico es una opción de viaje completa que incluye varios servicios de viaje, como
-                transporte, alojamiento, comidas, visitas turísticas y, a menudo, actividades adicionales. Los paquetes
-                turísticos están diseñados para brindarte una experiencia de viaje completa y sin estrés, y pueden ser
-                una excelente opción para aquellos que desean experimentar lo mejor de un destino sin tener que
-                preocuparse por organizar cada detalle por separado.Los paquetes turísticos pueden variar en términos de
-                duración, destino y precio, y generalmente están disponibles en diferentes niveles de comodidad y lujo.
-                Por ejemplo, algunos paquetes turísticos pueden ofrecer alojamiento de lujo en un hotel de cinco
-                estrellas, mientras que otros pueden incluir alojamiento en albergues económicos o hoteles de tres
-                estrellas.</p>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ¿Qué es un paquete turístico?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPreguntasFrecuentes"
+            >
+              <div class="accordion-body">
+                <p>
+                  Un paquete turístico es una opción de viaje completa que
+                  incluye varios servicios de viaje, como transporte,
+                  alojamiento, comidas, visitas turísticas y, a menudo,
+                  actividades adicionales. Los paquetes turísticos están
+                  diseñados para brindarte una experiencia de viaje completa y
+                  sin estrés, y pueden ser una excelente opción para aquellos
+                  que desean experimentar lo mejor de un destino sin tener que
+                  preocuparse por organizar cada detalle por separado.Los
+                  paquetes turísticos pueden variar en términos de duración,
+                  destino y precio, y generalmente están disponibles en
+                  diferentes niveles de comodidad y lujo. Por ejemplo, algunos
+                  paquetes turísticos pueden ofrecer alojamiento de lujo en un
+                  hotel de cinco estrellas, mientras que otros pueden incluir
+                  alojamiento en albergues económicos o hoteles de tres
+                  estrellas.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              ¿De que se trata la aplicacion de Travel?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
-            <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                ¿De que se trata la aplicacion de Travel?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPreguntasFrecuentes"
+            >
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              ¿Cuáles son las ventajas de adquirir paquetes de viaje?
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
-            <div class="accordion-body">
-              Ahorro de tiempo y esfuerzo: Al adquirir un paquete de viaje, ahorras tiempo y esfuerzo al no tener que
-              preocuparte por reservar cada detalle de tu viaje por separado. Los paquetes de viaje suelen incluir
-              transporte, alojamiento, comidas y visitas turísticas, lo que significa que no tienes que preocuparte por
-              planificar cada aspecto de tu viaje
-              Ahorro de dinero: Los paquetes de viaje suelen ser más económicos que si reservaras cada detalle por
-              separado. Los proveedores de paquetes turísticos a menudo obtienen precios más bajos debido a sus acuerdos
-              con aerolíneas, hoteles y otros proveedores de servicios turísticos. Además, puedes encontrar descuentos
-              adicionales en los paquetes de viaje al comprar con anticipación.
-              Experiencia más completa: Los paquetes de viaje suelen incluir visitas turísticas y actividades que te
-              permiten experimentar lo mejor de un destino. Esto te permite tener una experiencia más completa y
-              enriquecedora, especialmente si estás visitando un lugar por primera vez.
-              Atención personalizada: Muchas empresas de paquetes turísticos ofrecen atención personalizada para
-              ayudarte a planificar tu viaje. Esto incluye recomendaciones de lugares de interés, asesoramiento sobre
-              opciones de transporte y alojamiento, y consejos sobre cómo maximizar tu tiempo en el destino.
-              Tranquilidad: Al adquirir un paquete de viaje, puedes estar seguro de que todo ha sido planificado de
-              antemano, lo que te brinda tranquilidad durante tus vacaciones. Además, si algo sale mal, como un retraso
-              en el vuelo o una cancelación de última hora, el proveedor de paquetes turísticos se encarga de
-              solucionarlo, lo que te permite disfrutar de tu viaje sin preocupaciones.
-              En resumen, los paquetes de viaje ofrecen una amplia variedad de beneficios, que incluyen ahorro de tiempo
-              y dinero, una experiencia más completa, atención personalizada y tranquilidad durante tus vacaciones.
-
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                ¿Cuáles son las ventajas de adquirir paquetes de viaje?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPreguntasFrecuentes"
+            >
+              <div class="accordion-body">
+                Ahorro de tiempo y esfuerzo: Al adquirir un paquete de viaje,
+                ahorras tiempo y esfuerzo al no tener que preocuparte por
+                reservar cada detalle de tu viaje por separado. Los paquetes de
+                viaje suelen incluir transporte, alojamiento, comidas y visitas
+                turísticas, lo que significa que no tienes que preocuparte por
+                planificar cada aspecto de tu viaje Ahorro de dinero: Los
+                paquetes de viaje suelen ser más económicos que si reservaras
+                cada detalle por separado. Los proveedores de paquetes
+                turísticos a menudo obtienen precios más bajos debido a sus
+                acuerdos con aerolíneas, hoteles y otros proveedores de
+                servicios turísticos. Además, puedes encontrar descuentos
+                adicionales en los paquetes de viaje al comprar con
+                anticipación. Experiencia más completa: Los paquetes de viaje
+                suelen incluir visitas turísticas y actividades que te permiten
+                experimentar lo mejor de un destino. Esto te permite tener una
+                experiencia más completa y enriquecedora, especialmente si estás
+                visitando un lugar por primera vez. Atención personalizada:
+                Muchas empresas de paquetes turísticos ofrecen atención
+                personalizada para ayudarte a planificar tu viaje. Esto incluye
+                recomendaciones de lugares de interés, asesoramiento sobre
+                opciones de transporte y alojamiento, y consejos sobre cómo
+                maximizar tu tiempo en el destino. Tranquilidad: Al adquirir un
+                paquete de viaje, puedes estar seguro de que todo ha sido
+                planificado de antemano, lo que te brinda tranquilidad durante
+                tus vacaciones. Además, si algo sale mal, como un retraso en el
+                vuelo o una cancelación de última hora, el proveedor de paquetes
+                turísticos se encarga de solucionarlo, lo que te permite
+                disfrutar de tu viaje sin preocupaciones. En resumen, los
+                paquetes de viaje ofrecen una amplia variedad de beneficios, que
+                incluyen ahorro de tiempo y dinero, una experiencia más
+                completa, atención personalizada y tranquilidad durante tus
+                vacaciones.
+              </div>
             </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              ¿Qué debes considerar al elegir un paquete de hotel más avión?
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionPreguntasFrecuentes">
-            <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                ¿Qué debes considerar al elegir un paquete de hotel más avión?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionPreguntasFrecuentes"
+            >
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is
+                hidden by default, until the collapse plugin adds the
+                appropriate classes that we use to style each element. These
+                classes control the overall appearance, as well as the showing
+                and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth
+                noting that just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
             </div>
           </div>
         </div>
@@ -362,17 +661,16 @@
           </form>
         </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="./js/verificarSesionIniciada.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="./js/logicaBusqueda.js"></script>
-  <script src="./js/app.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/verificarSesionIniciada.js"></script>
+    <script src="./js/logicaBusqueda.js"></script>
+    <script src="./js/app.js" type="module"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
 <!-- TODOS LOS LINKS A REEMPLAZAR ESTAN CON # PARA ENCONTRAR MAS FACIL Y REEMPLAZAR UNA VEZ QUE SE HAYAN CREADO LAS PAGINAS  -->

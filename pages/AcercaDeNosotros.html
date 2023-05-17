@@ -1,249 +1,353 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="Maria Florencia Cane" />
+    <link rel="shortcut icon" href="../img/voyage-logo.svg" type="image/x-icon">
+    <title>Acerca de nosotros</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+  />
+  <link/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css%22%3E"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/acercaDeNosotros.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="Maria Florencia Cane" />
-  <title>Acerca de nosotros</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css%22%3E" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <link rel="stylesheet" href="../css/acercaDeNosotros.css" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar" data-bs-theme="dark">
+  <body>
+    <header>
+      <nav
+      class="navbar navbar-expand-lg fixed-top"
+      id="navbar"
+      data-bs-theme="dark"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="#">
-          <img src="../img/voyage-logo.svg" alt="logo voyage">
+        <a class="navbar-brand text-light" href="../index.html">
+          <img src="../img/voyage-logo.svg" alt="logo voyage" />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
             </li>
             <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="../pages/login.html">Acceder</a>
+              <a
+                class="nav-link text-light"
+                href="./acercaDeNosotros.html"
+                >Nosotros</a
+              >
             </li>
-            <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="./AcercaDeNosotros.html">Nosotros</a>
+            <li
+              class="nav-item d-flex justify-content-center d-none"
+              id="linkAdministrador"
+            >
+              <a class="nav-link text-light" href="./administrador.html"
+                >Administrador</a
+              >
             </li>
+          </ul>
+          <form class="d-flex" role="search" id="formularioBusqueda">
+            <input
+              class="form-control me-2"
+              type="search"
+              id="campoDeBusqueda"
+              placeholder="Buscar"
+              aria-label="Search"
+              minlength="2"
+              maxlength="12"
+              required
+            />
+            <button class="btn btn-outline-light" type="submit">
+              Buscar
+            </button>
+          </form>
+          <ul class="navbar-nav mb-2 mb-lg-0 mt-2 mt-lg-0">
             <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="./error404.html">Contactos</a>
-            </li>
-            <li class="nav-item d-flex justify-content-center">
-              <a class="nav-link text-light" href="./administrador.html">Administrador</a>
+              <a
+                class="btn btn-outline-light m-lg-2"
+                href="./login.html"
+                id="btnIniciarSesion"
+                ><i class="bi bi-person-fill"></i
+              ></a>
+              <button
+                class="btn btn-outline-light m-lg-2 d-none"
+                id="btnCerrarSesion"
+              >
+                <i class="bi bi-box-arrow-right"></i>
+              </button>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-  </header>
+    </header>
 
-  <main class="bg-light">
-    <!-- About section-->
-    <div class="container-aboutUs bg-light py-5 mt-4">
-      <div class="row container-lg px-0 mx-auto">
-        <section class="section-aboutUs col-md-6">
-          <h1 class="aboutUs__title display-3">Acerca de nosotros</h1>
-          <p class="aboutUs__paragraph fs-5">
-
-            Una seña de identidad intransferible: Nuestro compromiso con los clientes,
-            una atención exquisita y un trato humano. Haz el viaje que desees y
-            siente nuestro respaldo allí donde estés.
-          </p>
-          <p class="aboutUs__paragraph fs-5">
-            Trabajamos de manera colaborativa y nos apoyamos mutuamente para
-            afrontar el trabajo de crear este sitio web. Estamos orgullosos de
-            lo que hemos logrado y todo lo que aprendimos a lo largo de este
-            reto.
-          </p>
-          <p class="aboutUs__paragraph fs-5">
-            Esperamos grandes cosas de cada uno de nosotros de cara al futuro
-            y estamos a diario practicando para ser mejores cada día
-          </p>
-        </section>
-        <div class="col-md-6 d-flex align-items-lg-center">
-          <img class="w-100 ilustracion_svg_aboutUs" src="../img/principal.svg" alt="" />
+    <main class="bg-light">
+      <!-- About section-->
+      <div class="container-aboutUs bg-light py-5 mt-4">
+        <div class="row container-lg px-0 mx-auto">
+          <section class="section-aboutUs col-md-6">
+            <h1 class="aboutUs__title display-3">Acerca de nosotros</h1>
+            <p class="aboutUs__paragraph fs-5">
+              Una seña de identidad intransferible: Nuestro compromiso con los
+              clientes, una atención exquisita y un trato humano. Haz el viaje
+              que desees y siente nuestro respaldo allí donde estés.
+            </p>
+            <p class="aboutUs__paragraph fs-5">
+              Trabajamos de manera colaborativa y nos apoyamos mutuamente para
+              afrontar el trabajo de crear este sitio web. Estamos orgullosos de
+              lo que hemos logrado y todo lo que aprendimos a lo largo de este
+              reto.
+            </p>
+            <p class="aboutUs__paragraph fs-5">
+              Esperamos grandes cosas de cada uno de nosotros de cara al futuro
+              y estamos a diario practicando para ser mejores cada día
+            </p>
+          </section>
+          <div class="col-md-6 d-flex align-items-lg-center">
+            <img
+              class="w-100 ilustracion_svg_aboutUs"
+              src="../img/principal.svg"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-    </div>
 
-    <hr />
+      <hr />
 
-    <!-- Developers section -->
-    <section class="container py-5">
+      <!-- Developers section -->
+      <section class="container py-5">
+        <h2 class="developers__title mb-4 display-3">Developers</h2>
 
-      <h2 class="developers__title mb-4 display-3">Developers</h2>
-
-      <div class="row justify-content-center">
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4">
-          <div class="card shadow border-0">
-            <img src="../img/acerca-de-nosotros/Nico.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Nicolas</h3>
-              <p class="fw-bold">(Developer)</p>
-              <a class="link-dark" href="error404.html">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4">
-          <div class="card shadow border-0">
-            <img src="../img/acerca-de-nosotros/hector.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Hector</h3>
-              <p class="fw-bold">(Developer)</p>
-              <a class="link-dark" href="error404.html">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4">
-          <div class="card shadow border-0 shadow ">
-            <img src="../img/acerca-de-nosotros/gerardo.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Gerardo</h3>
-              <p class="fw-bold">(Scrum-Dev)</p>
-              <a class="link-dark" target="_blank" href="">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4">
-          <div class="card shadow border-0 shadow">
-            <img src="../img/acerca-de-nosotros/Sol.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Sol</h3>
-              <p class="fw-bold">(Scrum-Dev)</p>
-              <a class="link-dark" target="_blank" href="">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4 ">
-          <div class="card shadow border-0 shadow">
-            <img src="../img/acerca-de-nosotros/Yani.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Yani</h3>
-              <p class="fw-bold">(Scrum-Dev)</p>
-              <a class="link-dark" target="_blank" href="">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <!-- developer -->
-        <div class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4">
-          <div class="card shadow border-0 shadowh">
-            <img src="../img/acerca-de-nosotros/flor.jpg" class="card-img-top" alt="..." />
-            <section class="card-body">
-              <h3 class="card-title fw-bolder">Flor</h3>
-              <p class="fw-bold">(Scrum-Dev)</p>
-              <a class="link-dark" target="_blank" href="">
-                <i class="bi bi-linkedin fs-5"></i>
-              </a>
-            </section>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-  <footer class="mb-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="../img/voyage-logo.svg" alt="logo voyage">
-          <ul>
-            <li>
-              <a class="text-decoration-none nav-link text-light" href="./error404.html"
-                >Teléfono</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none nav-link text-light" href="./AcercaDeNosotros.html"
-                >Acerca de Nosotros</a
-              >
-            </li>
-            <li>
-              <a class="text-decoration-none nav-link text-light" href="./error404.html"
-                >Ubicacion de la empresa</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-light">Síguenos en las redes sociales</h4>
-          <ul class="social d-flex">
-            <li>
-              <a href="./pages/error404.html"
-                ><i class="bi bi-facebook text-light ms-3 fs-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="./pages/error404.html"
-                ><i class="bi bi-instagram text-light ms-3 fs-1"></i
-              ></a>
-            </li>
-            <li>
-              <a href="./pages/error404.html"
-                ><i class="bi bi-twitter text-light ms-3 fs-1"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4 class="text-light">Suscríbete a nuestro boletín</h4>
-          <form>
-            <!-- Opcional suscripcion con mail -->
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                placeholder="Introduce tu correo electrónico "
-                minlength="12"
-                maxlength="150"
-                required
+        <div class="row justify-content-center">
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0">
+              <img
+                src="../img/acerca-de-nosotros/Nico.jpg"
+                class="card-img-top"
+                alt="..."
               />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Nicolas</h3>
+                <p class="fw-bold">(Developer)</p>
+                <a class="link-dark" href="error404.html">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
             </div>
-            <button
-              type="submit"
-              class="btn btn-outline-light btnEstilo mt-2"
-            >
-              Suscribirse
-            </button>
-          </form>
+          </div>
+
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0">
+              <img
+                src="../img/acerca-de-nosotros/hector.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Hector</h3>
+                <p class="fw-bold">(Developer)</p>
+                <a class="link-dark" href="error404.html">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0 shadow">
+              <img
+                src="../img/acerca-de-nosotros/gerardo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Gerardo</h3>
+                <p class="fw-bold">(Scrum-Dev)</p>
+                <a class="link-dark" target="_blank" href="">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0 shadow">
+              <img
+                src="../img/acerca-de-nosotros/Sol.jpg"
+                class="card-img-top"
+                alt="Foto Sol Perato"
+              />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Sol</h3>
+                <p class="fw-bold">(Scrum-Dev)</p>
+                <a class="link-dark" target="_blank" href="">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0 shadow">
+              <img
+                src="../img/acerca-de-nosotros/Yani.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Yani</h3>
+                <p class="fw-bold">(Scrum-Dev)</p>
+                <a class="link-dark" target="_blank" href="">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+
+          <!-- developer -->
+          <div
+            class="container-card__developers col-sm-5 col-md-4 col-lg-3 h-auto mb-4 p-md-4"
+          >
+            <div class="card shadow border-0 shadowh">
+              <img
+                src="../img/acerca-de-nosotros/flor.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <section class="card-body">
+                <h3 class="card-title fw-bolder">Flor</h3>
+                <p class="fw-bold">(Scrum-Dev)</p>
+                <a class="link-dark" target="_blank" href="">
+                  <i class="bi bi-linkedin fs-5"></i>
+                </a>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../img/voyage-logo.svg" alt="logo voyage" />
+            <ul>
+              <li>
+                <a
+                  class="text-decoration-none nav-link text-light"
+                  href="./error404.html"
+                  >Teléfono</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none nav-link text-light"
+                  href="./acercaDeNosotros.html"
+                  >Acerca de Nosotros</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-decoration-none nav-link text-light"
+                  href="./error404.html"
+                  >Ubicacion de la empresa</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-light">Síguenos en las redes sociales</h4>
+            <ul class="social d-flex">
+              <li>
+                <a href="./error404.html"
+                  ><i class="bi bi-facebook text-light ms-3 fs-1"></i
+                ></a>
+              </li>
+              <li>
+                <a href="./error404.html"
+                  ><i class="bi bi-instagram text-light ms-3 fs-1"></i
+                ></a>
+              </li>
+              <li>
+                <a href="./error404.html"
+                  ><i class="bi bi-twitter text-light ms-3 fs-1"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4 class="text-light">Suscríbete a nuestro boletín</h4>
+            <form>
+              <!-- Opcional suscripcion con mail -->
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Introduce tu correo electrónico "
+                  minlength="12"
+                  maxlength="150"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-outline-light btnEstilo mt-2"
+              >
+                Suscribirse
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
   </footer>
   <script src="../js/validarCorreoFooter.js"></script>
 </body>
+</html>
