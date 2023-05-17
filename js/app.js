@@ -1,6 +1,5 @@
 const nav = document.getElementById("navbar");
 const box = document.querySelector("main").children[0];
-const search = document.getElementById("campoDeBusqueda");
 const paquetes = document.getElementById("paquetes");
 
 console.log(box.offsetHeight);
@@ -16,10 +15,6 @@ window.addEventListener("scroll", () => {
     nav.classList.add("bg-transparent");
     //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
   }
-});
-
-search.addEventListener("focus", () => {
-  paquetes.scrollIntoView({ behavior: "smooth" }, true);
 });
 
 

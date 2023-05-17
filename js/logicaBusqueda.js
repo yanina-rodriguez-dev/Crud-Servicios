@@ -2,6 +2,11 @@ let campoDeBusqueda = document.getElementById("campoDeBusqueda");
 let resultadosDeBusqueda = document.getElementById("resultadosDeBusqueda");
 let formularioBusqueda = document.getElementById("formularioBusqueda"); 
 let mensaje = document.getElementById("sincoincidencias")
+let search = document.getElementById("campoDeBusqueda");
+
+search.addEventListener("focus", () => {
+  paquetes.scrollIntoView({ behavior: "smooth" }, true);
+});
 
 formularioBusqueda.addEventListener("submit", (e) => {
   e.preventDefault();
