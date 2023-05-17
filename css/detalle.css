@@ -1,13 +1,14 @@
-#img-display{
+#galeria{
     background-image: url('../img/maldives-01.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     transition: background-image 2s ease-in-out;
 }
 
-#img-display h1{
+#galeria h1{
     filter: drop-shadow(0px 0px 3px #000);
 }
 

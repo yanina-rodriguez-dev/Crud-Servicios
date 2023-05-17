@@ -1,6 +1,6 @@
 const nav = document.getElementById('navbar');
 const box = document.querySelector("main").children[0];
-const search = document.getElementById('search');
+const search = document.getElementById('campoDeBusqueda');
 const paquetes = document.getElementById('paquetes');
 
 console.log(box.offsetHeight)
