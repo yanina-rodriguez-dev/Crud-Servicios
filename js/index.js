@@ -5,16 +5,18 @@ listaPaquetes.map((paquete) =>{
 });
 
 function crearColumna(paquete){
-    let containerPaquete = document.getElementById('paquetes').children[1];
+    let containerPaquete = document.getElementById('container-paquetes');
     containerPaquete.innerHTML += `
     <div class="card m-2 col-lg-3 col-md-5 col-12 ocultarElementos articulo">
-        <img src="./img/parejaenlaPLAYA.jpg" class="card-img-top pt-2" alt="pareja en la playa" />
+        <img src="${paquete.imagen}" class="card-img-top pt-2" alt="pareja en la playa" />
         <div class="card-body">
             <h5 class="card-title">${paquete.nombre}</h5>
             <p class="card-text">
                 ${paquete.descripcion}
             </p>
-            <p class="dias">7 DIAS</p>
+        </div>
+        <div class="card-footer">
+            <p class="dias">${paquete.dias}</p>
             <div class="d-flex justify-content-around">
                 <button class="btn btn-primary" onclick="navegarPaginaDetalle('${paquete.codigo}')">
                     Ver Detalle

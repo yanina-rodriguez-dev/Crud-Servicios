@@ -71,18 +71,18 @@
     </nav>
     <div class="container">
       <section class="row">
+        <section id="nombreServicio" class="col-12">
+          <aside>
+            <h1 class="mb-0" id="paquete-nombre">Título servicio</h1> <span class="text-secondary" id="paquete-codigo">código único</span>
+          </aside>
+          <aside>
+            <p>
+              <i class="bi bi-star-fill text-warning"></i><span class="text-warning"> 5 </span><a
+                href="#reviews">(999)</a>
+            </p>
+          </aside>
+        </section>
         <aside class="col-sm-12 col-md-6 px-3">
-          <section id="nombreServicio" class="row">
-            <aside>
-              <h1 class="mb-0" id="paquete-nombre">Título servicio</h1> <span class="text-secondary" id="paquete-codigo">código único</span>
-            </aside>
-            <aside>
-              <p>
-                <i class="bi bi-star-fill text-warning"></i><span class="text-warning"> 5 </span><a
-                  href="#reviews">(999)</a>
-              </p>
-            </aside>
-          </section>
           <section class="row rounded m-1 p-2 p-md-3 d-flex align-items-center" id="card-prestador">
             <aside class="col-5 ps-0">
               <img src="https://picsum.photos/200?random=4" class="img-fluid rounded-circle m-2" alt="">
@@ -101,24 +101,24 @@
           </section>
         </aside>
         <aside class="col-12 col-md-6 px-3">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <ul class="nav nav-tabs" id="precios" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link text-dark active" id="home-tab" data-bs-toggle="tab"
                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                 aria-selected="true">Básico</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab"
+              <button class="nav-link text-dark disabled bg-secondary" id="profile-tab" data-bs-toggle="tab"
                 data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                 aria-selected="false">Estándar</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark" id="contact-tab" data-bs-toggle="tab"
+              <button class="nav-link text-dark disabled bg-secondary" id="contact-tab" data-bs-toggle="tab"
                 data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                 aria-selected="false">Premium</button>
             </li>
           </ul>
-          <div class="tab-content py-3 bg-light text-dark rounded-bottom" id="myTabContent">
+          <div class="tab-content py-3 bg-light text-dark rounded-bottom" id="preciosContent">
             <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
               tabindex="0">
               <h4 id="paquete-precio">$999.99</h4>
