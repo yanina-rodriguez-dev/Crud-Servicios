@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="keywords" content="">
-  <title>Document</title>
+  <title>Detalle</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -56,31 +56,33 @@
       </div>
     </nav>
   </header>
-  <main class="px-0 text-bg-dark bg-black">
-    <section id="img-display"
+  <main class="px-0 ">
+    <!-- cambiar por un carousel -->
+    <section id="galeria"
       class="w-100 d-flex align-items-center justify-content-center animate__animated animate__fadeIn">
       <h1 class="text-light">Maldivas</h1>
     </section>
+    
     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="p-3">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Categoria de Servicio</li>
+        <li class="breadcrumb-item"><a href="../index.html" class="text-decoration-none">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page" id="paquete-categoria">Categoria de Servicio</li>
       </ol>
     </nav>
     <div class="container">
       <section class="row">
+        <section id="nombreServicio" class="col-12">
+          <aside>
+            <h1 class="mb-0" id="paquete-nombre">Título servicio</h1> <span class="text-secondary" id="paquete-codigo">código único</span>
+          </aside>
+          <aside>
+            <p>
+              <i class="bi bi-star-fill text-warning"></i><span class="text-warning"> 5 </span><a
+                href="#reviews">(999)</a>
+            </p>
+          </aside>
+        </section>
         <aside class="col-sm-12 col-md-6 px-3">
-          <section id="nombreServicio" class="row">
-            <aside>
-              <h1 class="mb-0">Título servicio</h1> <span class="text-secondary">código único</span>
-            </aside>
-            <aside>
-              <p>
-                <i class="bi bi-star-fill text-warning"></i><span class="text-warning"> 5 </span><a
-                  href="#reviews">(999)</a>
-              </p>
-            </aside>
-          </section>
           <section class="row rounded m-1 p-2 p-md-3 d-flex align-items-center" id="card-prestador">
             <aside class="col-5 ps-0">
               <img src="https://picsum.photos/200?random=4" class="img-fluid rounded-circle m-2" alt="">
@@ -93,33 +95,33 @@
             </aside>
           </section>
           <section class="py-2">
-            <h3>Nombre Servicio</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore recusandae delectus in cum esse
+            <h3>Descripción del paquete</h3>
+            <p id="paquete-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis labore recusandae delectus in cum esse
               placeat id saepe eius laborum ipsa dicta iste, porro aliquam obcaecati accusamus est aspernatur et!</p>
           </section>
         </aside>
         <aside class="col-12 col-md-6 px-3">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <ul class="nav nav-tabs" id="precios" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link text-dark active" id="home-tab" data-bs-toggle="tab"
                 data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                 aria-selected="true">Básico</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab"
+              <button class="nav-link text-dark disabled bg-secondary" id="profile-tab" data-bs-toggle="tab"
                 data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                 aria-selected="false">Estándar</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link text-dark" id="contact-tab" data-bs-toggle="tab"
+              <button class="nav-link text-dark disabled bg-secondary" id="contact-tab" data-bs-toggle="tab"
                 data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
                 aria-selected="false">Premium</button>
             </li>
           </ul>
-          <div class="tab-content py-3 bg-light text-dark rounded-bottom" id="myTabContent">
+          <div class="tab-content py-3 bg-light text-dark rounded-bottom" id="preciosContent">
             <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
               tabindex="0">
-              <h4>$999.99</h4>
+              <h4 id="paquete-precio">$999.99</h4>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum in et incidunt similique consequuntur
                 culpa numquam sunt pariatur laudantium rem velit.</p>
               <ul class="list-unstyled">
@@ -339,6 +341,7 @@
     </div>
   </footer>
   <script src="../js/app.js"></script>
+  <script src="../js/detalle.js"></script>
   <script src="../js/review.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"

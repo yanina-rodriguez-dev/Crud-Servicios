@@ -130,7 +130,7 @@ function cambiarFondo(){
     imgDisplay.style.backgroundImage = `url('../img/maldives-0${Math.floor(Math.random() * 3)+1}.jpg')`;
 } */
 
-const imgDisplay = document.getElementById('img-display');
+const imgDisplay = document.getElementById('galeria');
 const images = ['../img/maldives-01.jpg', '../img/maldives-02.jpg', '../img/maldives-03.jpg'];
 let currentImageIndex = 0;
 
