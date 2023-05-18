@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-body {
-  font-family: 'Audiowide', cursive;
+*{
+  margin: 0px;
+  padding:0px;
+}
+body{
   background-image: url(../img/gradient-liquid-background-design_52683-70580.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,20 +16,6 @@ body {
  border: none;
  color: #fff!important;
 }
-/* FOOTER */
-footer {
-  background: rgb(9, 9, 137);
-  padding: 50px 0;
-}
-
-footer h4 {
-  margin: top 0;
-}
-footer ul {
-  list-style: none;
-
-}
-
-footer img{
-  height: 2.2em;
+main{
+  font-family: 'Audiowide', cursive;
 }
