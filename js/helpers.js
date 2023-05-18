@@ -27,7 +27,7 @@ function validarDias(dias){
         return false;
     }
 }
-export function validacionesFinales(nombre,precio,categoria,imagen,descripcion,dias){
+export function validacionesFinales(nombre,precio,categoria,imagen,descripcion,dias, destino){
     let resumen = '';
     if(! validarCantidadDeCaracteres(nombre, 5 , 100)){
         resumen = 'El Nombre del Paquete de Viajes debe dar a conocer por lo menos el destino. <br>';
@@ -46,6 +46,9 @@ export function validacionesFinales(nombre,precio,categoria,imagen,descripcion,d
     }
     if(! validarDias(dias)){
         resumen += 'Los Dias Ingresados deben Corresponder a uno de los Disponibles que se Ofrecen Actualmente. <br>';
+    }
+    if(! validarCantidadDeCaracteres(destino, 5 , 20)){
+        resumen += 'La Ubicación debe contener entre 5 y 20 caracteres<br>';
     }
     return resumen;
 }
