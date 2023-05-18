@@ -27,6 +27,7 @@ function cerrarSesion() {
     iconColor: "#813dd8",
     confirmButtonColor: "#813dd8",
   });
+  window.location.href = window.origin + "/index.html";
 }
 
 verificarSesionIniciada();

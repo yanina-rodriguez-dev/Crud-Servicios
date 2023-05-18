@@ -1,17 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 
 body {
-  font-family: "Audiowide", cursive!important;
+  font-family: "Audiowide", cursive;
+  height: 100%;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: nexa;
 }
 
 a {
@@ -33,7 +30,7 @@ main{
     position: relative;
     justify-content: center;
     min-height: 100vh;
-    color: rgb(231, 62, 73);
+    color: blueviolet;
     text-align: center;
 }
 
@@ -66,7 +63,7 @@ div {
 .box h2 {
     margin-bottom: 40px;
     font-size: 35px;
-    text-shadow: 0 2px 2px red;
+    text-shadow: 0 2px 2px blueviolet;
 }
 
 .box a.boxBtn {
@@ -95,9 +92,6 @@ h1 {
 }
 
 @media(max-width:800px) {
-    .box {
-        min-height: 600px;
-    }
     
     .box h1 {
         font-size: 32px;
