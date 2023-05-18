@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+
+body {
+  font-family: "Audiowide", cursive!important;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +50,6 @@ main{
 div {
     background: rgba(0, 0, 0, 0.3);
     color: white;
-    width: 33%;
     margin: 2rem;
     font-size: 1.2rem;
     top: 30px;
@@ -79,7 +84,7 @@ h1 {
 }
 
 .box a.boxBtn:hover {
-    background: yellow;
+    background: #8a2be2;
     color: black;
 }
 
