@@ -74,9 +74,9 @@ h3 {
   background-color: blueviolet;
 }
 
-.card {
-  background: #00000092;
-  color: white;
+#paquetes .card, #features .card {
+    background: #00000092;
+    color: white;
 }
 .btn-primary {
   --bs-btn-bg: #021e45;
