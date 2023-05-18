@@ -81,7 +81,7 @@
                             <th scope="col" class="text-white">Imagen</th>
                             <th scope="col" class="text-white">Descripcion</th>
                             <th scope="col" class="text-white">Dias</th>
-                            <th scope="col" class="text-white">Funciones</th>
+                            <th scope="col" class="text-white">Destino</th>
                         </tr>
                     </thead>
                     <tbody id="tablaPaquete">
@@ -139,6 +139,10 @@
                                 <option value="14 Dias">14 Dias</option>
                             </select>
                         </div>
+                        <div class="mb-3">
+                          <label for="imagen">Destino</label>
+                          <input id="destino" type="text" class="form-control" placeholder="Destino" minlength="5" max="20">
+                      </div>
                         <div class="alert alert-danger mt-3 d-none" role="alert" id="alerta"></div>
                         <button class="btn btn-primary" type="submit" id="btnFormulario">Cargar</button>
                     </form>
