@@ -1,0 +1,26 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #a02ef8;
+    background-image: linear-gradient(0deg, #a02ef8 0%, #021e45 100%);
+    min-height: 100vh;
+    color: white;
+}
+main{
+    flex-grow: 1;
+}
+.my-class {
+    display: inline-block;
+    max-width: 10rem;
+}
+.tituloFontPersonalizado{
+    font-family: 'Audiowide', cursive;
+}
+.modal-content{
+    background-color: #a02ef8;
+    background-image: linear-gradient(0deg, #a02ef8 0%, #021e45 100%);
+}
+.btn-close{
+    color: white;
+}
