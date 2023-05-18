@@ -12,7 +12,7 @@ let labelCategoria = document.getElementById('paquete-categoria');
 let labelDescripcion = document.getElementById('paquete-descripcion');
 let labelCodigo = document.getElementById('paquete-codigo');
 let fondo = document.getElementById('galeria');
-/* let labelDias = document.getElementById('paquete-dias'); */
+let labelDias = document.getElementById('paquete-dias');
 
 labelDestino.innerHTML = paqueteBuscado.destino;
 labelCategoria.innerHTML = paqueteBuscado.categoria;
@@ -20,6 +20,7 @@ labelNombre.innerHTML = paqueteBuscado.nombre;
 labelDescripcion.innerHTML = paqueteBuscado.descripcion;
 labelCodigo.innerHTML = paqueteBuscado.codigo;
 labelPrecio.innerHTML = `${paqueteBuscado.precio} $`;
+labelDias.innerHTML = paqueteBuscado.dias;
 fondo.style.backgroundImage = `url(${paqueteBuscado.imagen})`;
 
 console.log(paqueteBuscado.imagen)
