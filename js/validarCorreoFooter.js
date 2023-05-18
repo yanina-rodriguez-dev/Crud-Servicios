@@ -1,23 +1,26 @@
 let input_correo_suscribirse = document.getElementById("input_correo_suscribirse");
-let boton_suscribirse = document.getElementById("botonsuscribirse");
-let form = document.querySelector("#formSuscripcion");
-const patronValidadCorreo = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+let boton_suscribirse = document.getElementById("boton_suscribirse");
+let formSuscribirse = document.getElementById("formSuscripcion");
+const patronValidarCorreo = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
+
+formSuscribirse.addEventListener("submit", (e) => {
+  e.preventDefault();
+  validarCorreo();
+  formSuscribirse.reset()
+});
 
 function validarCorreo(){
     let valueInputCorreo = input_correo_suscribirse.value;
-    if(patronValidadCorreo.test(valueInputCorreo)){
-
+    if(patronValidarCorreo.test(valueInputCorreo)){
+      window.location.href = window.origin + "/pages/error404.html";
     }else{
-        /* Informar al usuario de que debe contener @ y . en su correo */
-        let informeDeError = document.createElement("p");
-        informeDeError.innerHTML = "El correo debe contener @ y .";
-        informeDeError.classList.add("fs-4");
-        informeDeError.classList.add("text-white");
-        form.appendChild(informeDeError);
+    Swal.fire({
+      title: "Los campos son obligatorios y no pueden estar vacios.",
+      icon: "error",
+      background: "#121f4b",
+      color: "#fff",
+      iconColor: "#813dd8",
+      confirmButtonColor: "#813dd8",
+    });
     }
 }
-form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    validarCorreo();
-});
