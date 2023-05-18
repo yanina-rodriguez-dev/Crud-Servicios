@@ -17,5 +17,3 @@ window.addEventListener("scroll", () => {
     //nav.className = ('navbar navbar-expand-lg bg-transparent fixed-top');
   }
 });
-
-
