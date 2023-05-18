@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-
-body {
-  font-family: 'Audiowide', cursive;
+*{
+  margin: 0px;
+  padding:0px;
+}
+body{
   background-image: url(../img/gradient-liquid-background-design_52683-70580.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,4 +15,7 @@ body {
  background-color: #813dd8!important;
  border: none;
  color: #fff!important;
+}
+main{
+  font-family: 'Audiowide', cursive;
 }
