@@ -6,6 +6,7 @@ const patronValidarCorreo = /^[a-zA-Z0-9.%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$/;
 formSuscribirse.addEventListener("submit", (e) => {
   e.preventDefault();
   validarCorreo();
+  formSuscribirse.reset()
 });
 
 function validarCorreo(){
